@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="barButtonItem3.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="button_giaovien.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAL4FJREFUeF7t
         XQd4FFXbnQVFVATBAqJ8iCgQQkhCCSX0Fgi9V+nSRD/1AwQUkN57L6ETIAkQagg1dBIg9I500kMHEdl5
@@ -326,7 +326,7 @@
         B/D/VRwc958A5+EUwKd384BeQB0gB8D5U0/0DKQs8Zr2fwn99j3js1esAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="barButtonItem4.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="button_phancong.Glyph" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAaqxJREFUeF7t
         vQV8FNm2PVzpJARJcHcZ3F2S4O7u7u4ECIHg7g4DM8jgMri7u2sgEPcQAgmRTtf61j7dzWS4M/Pk3ve+
@@ -787,6 +787,12 @@
         H5YCkRgxHFaZAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="xtraTabbedMdiManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAUAEBAAAAEAIABoBAAAVgAAACAgAAABACAAqBAAAL4EAAAwMAAAAQAgAKglAABmFQAAQEAAAAEA
@@ -2453,4 +2459,7 @@
         ////////////////////////
 </value>
   </data>
+  <metadata name="defaultLookAndFeel1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>207, 17</value>
+  </metadata>
 </root>
