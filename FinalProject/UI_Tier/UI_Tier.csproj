@@ -40,7 +40,6 @@
     <Reference Include="DevExpress.Sparkline.v13.1.Core" />
     <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v13.1" />
-    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraNavBar.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -61,11 +60,6 @@
     </Compile>
     <Compile Include="dangnhap.Designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="dataDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dataDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="giaodienchinh.cs">
       <SubType>Form</SubType>
@@ -129,6 +123,12 @@
     <Compile Include="quanlymonhoc.Designer.cs">
       <DependentUpon>quanlymonhoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="quanlynamhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanlynamhoc.Designer.cs">
+      <DependentUpon>quanlynamhoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="quanlyphanconggiaovien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,30 +161,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="quanlyhocky.resx">
-      <DependentUpon>quanlyhocky.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="quanlykhoilop.resx">
-      <DependentUpon>quanlykhoilop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="quanlylop.resx">
-      <DependentUpon>quanlylop.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="quanlymonhoc.resx">
-      <DependentUpon>quanlymonhoc.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="app.config" />
-    <None Include="dataDataSet.xsc">
-      <DependentUpon>dataDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="dataDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dataDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="dataDataSet.xss">
-      <DependentUpon>dataDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

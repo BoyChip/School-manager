@@ -17,25 +17,5 @@ namespace UI_Tier
         {
             InitializeComponent();
         }
-
-        private void monHocBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.monHocBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dataDataSet);
-
-        }
-
-        private void quanlymonhoc_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'dataDataSet.MonHoc' table. You can move, or remove it, as needed.
-            this.monHocTableAdapter.Fill(this.dataDataSet.MonHoc);
-
-        }
-
-        private void gridControl1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

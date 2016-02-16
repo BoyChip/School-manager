@@ -126,7 +126,13 @@ namespace UI_Tier
             _ql_hocky.Show();
         }
 
-          private void button_hocluc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void button_namhoc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            quanlynamhoc _ql_namhoc = new quanlynamhoc();
+            _ql_namhoc.Show();
+        }
+
+        private void button_hocluc_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             quanlyhocluc _ql_hocluc = new quanlyhocluc();
             _ql_hocluc.MdiParent = this;

@@ -48,6 +48,7 @@
             this.button_lop = new DevExpress.XtraBars.BarButtonItem();
             this.button_khoilop = new DevExpress.XtraBars.BarButtonItem();
             this.button_hocky = new DevExpress.XtraBars.BarButtonItem();
+            this.button_namhoc = new DevExpress.XtraBars.BarButtonItem();
             this.button_hocluc = new DevExpress.XtraBars.BarButtonItem();
             this.button_hanhkiem = new DevExpress.XtraBars.BarButtonItem();
             this.button_danhsach_hocsinh = new DevExpress.XtraBars.BarButtonItem();
@@ -96,6 +97,7 @@
             this.button_lop,
             this.button_khoilop,
             this.button_hocky,
+            this.button_namhoc,
             this.button_hocluc,
             this.button_hanhkiem,
             this.button_danhsach_hocsinh,
@@ -240,11 +242,19 @@
             // 
             // button_hocky
             // 
-            this.button_hocky.Caption = "Học Kỳ - Năm Học";
+            this.button_hocky.Caption = "Học Kỳ";
             this.button_hocky.Id = 9;
             this.button_hocky.Name = "button_hocky";
             this.button_hocky.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_hocky.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_hocky_ItemClick);
+            // 
+            // button_namhoc
+            // 
+            this.button_namhoc.Caption = "Năm học";
+            this.button_namhoc.Id = 10;
+            this.button_namhoc.Name = "button_namhoc";
+            this.button_namhoc.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.button_namhoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_namhoc_ItemClick);
             // 
             // button_hocluc
             // 
@@ -383,6 +393,7 @@
             // 
             this.ribbonPageGroup5.AllowTextClipping = false;
             this.ribbonPageGroup5.ItemLinks.Add(this.button_hocky);
+            this.ribbonPageGroup5.ItemLinks.Add(this.button_namhoc);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Học Kỳ - Năm Học";
             // 
@@ -500,6 +511,7 @@
         private DevExpress.XtraBars.BarButtonItem button_lop;
         private DevExpress.XtraBars.BarButtonItem button_khoilop;
         private DevExpress.XtraBars.BarButtonItem button_hocky;
+        private DevExpress.XtraBars.BarButtonItem button_namhoc;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;

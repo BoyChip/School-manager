@@ -20,10 +20,7 @@ namespace UI_Tier
 
         private void hocsinh_Load(object sender, EventArgs e)
         {
-  
 
         }
-
-       
     }
 }

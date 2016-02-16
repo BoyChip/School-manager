@@ -17,25 +17,5 @@ namespace UI_Tier
         {
             InitializeComponent();
         }
-
-        private void hocKy_NamHocBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.hocKy_NamHocBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dataDataSet);
-
-        }
-
-        private void quanlyhocky_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'dataDataSet.HocKy_NamHoc' table. You can move, or remove it, as needed.
-            this.hocKy_NamHocTableAdapter.Fill(this.dataDataSet.HocKy_NamHoc);
-
-        }
-
-        private void gridControl1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -11,9 +11,9 @@ using DevExpress.XtraEditors;
 
 namespace UI_Tier
 {
-    public partial class quanlykhoilop : DevExpress.XtraEditors.XtraForm
+    public partial class quanlynamhoc : DevExpress.XtraEditors.XtraForm
     {
-        public quanlykhoilop()
+        public quanlynamhoc()
         {
             InitializeComponent();
         }
