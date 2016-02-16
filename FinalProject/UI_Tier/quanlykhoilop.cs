@@ -17,5 +17,20 @@ namespace UI_Tier
         {
             InitializeComponent();
         }
+
+        private void khoiBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.khoiBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dataDataSet);
+
+        }
+
+        private void quanlykhoilop_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataDataSet.Khoi' table. You can move, or remove it, as needed.
+            this.khoiTableAdapter.Fill(this.dataDataSet.Khoi);
+
+        }
     }
 }
