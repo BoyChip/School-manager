@@ -32,5 +32,10 @@ namespace UI_Tier
             this.tableAdapterManager.UpdateAll(this.dataDataSet);
 
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.lopBindingSource.CancelEdit();
+        }
     }
 }

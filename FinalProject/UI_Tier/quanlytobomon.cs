@@ -17,5 +17,25 @@ namespace UI_Tier
         {
             InitializeComponent();
         }
+
+        private void toBoMonBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.toBoMonBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dataDataSet);
+
+        }
+
+        private void quanlytobomon_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataDataSet.ToBoMon' table. You can move, or remove it, as needed.
+            this.toBoMonTableAdapter.Fill(this.dataDataSet.ToBoMon);
+
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.toBoMonBindingSource.CancelEdit();
+        }
     }
 }

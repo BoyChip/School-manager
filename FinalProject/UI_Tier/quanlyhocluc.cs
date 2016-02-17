@@ -17,5 +17,20 @@ namespace UI_Tier
         {
             InitializeComponent();
         }
+
+        private void danhGiaBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.danhGiaBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dataDataSet);
+
+        }
+
+        private void quanlyhocluc_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataDataSet.DanhGia' table. You can move, or remove it, as needed.
+            this.danhGiaTableAdapter.Fill(this.dataDataSet.DanhGia);
+
+        }
     }
 }

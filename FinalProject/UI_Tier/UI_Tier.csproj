@@ -161,8 +161,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="quanlygiaovien.resx">
+      <DependentUpon>quanlygiaovien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanlyhanhkiem.resx">
+      <DependentUpon>quanlyhanhkiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="quanlyhocky.resx">
       <DependentUpon>quanlyhocky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanlyhocluc.resx">
+      <DependentUpon>quanlyhocluc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="quanlykhoilop.resx">
       <DependentUpon>quanlykhoilop.cs</DependentUpon>
@@ -172,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="quanlymonhoc.resx">
       <DependentUpon>quanlymonhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanlytobomon.resx">
+      <DependentUpon>quanlytobomon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="dataDataSet.xsc">

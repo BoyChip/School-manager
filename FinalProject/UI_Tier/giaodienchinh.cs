@@ -91,7 +91,6 @@ namespace UI_Tier
         private void button_to_bomon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             quanlytobomon _ql_tobomon = new quanlytobomon();
-            _ql_tobomon.MdiParent = this;
             _ql_tobomon.Show();
         }
 

@@ -28,3 +28,7 @@ C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\
 C:\Users\BoyChip\Downloads\School-manager-f3963f9a0e8864fe221a553fce5435e36c6e8376\FinalProject\UI_Tier\bin\Debug\UI_Tier.exe.config
 C:\Users\BoyChip\Downloads\School-manager-f3963f9a0e8864fe221a553fce5435e36c6e8376\FinalProject\UI_Tier\obj\Debug\UI_Tier.exe
 C:\Users\BoyChip\Downloads\School-manager-f3963f9a0e8864fe221a553fce5435e36c6e8376\FinalProject\UI_Tier\obj\Debug\UI_Tier.pdb
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.quanlyhanhkiem.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.quanlyhocluc.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.quanlytobomon.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.quanlygiaovien.resources

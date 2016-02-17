@@ -53,6 +53,7 @@
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.colnamhoc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hocKy_NamHocBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hocKy_NamHocBindingNavigator)).BeginInit();
@@ -89,6 +90,7 @@
             this.tableAdapterManager.KhoiTableAdapter = null;
             this.tableAdapterManager.LopTableAdapter = null;
             this.tableAdapterManager.MonHocTableAdapter = null;
+            this.tableAdapterManager.ToBoMonTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = UI_Tier.dataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // hocKy_NamHocBindingNavigator
@@ -108,6 +110,7 @@
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
+            this.toolStripButton1,
             this.bindingNavigatorDeleteItem,
             this.hocKy_NamHocBindingNavigatorSaveItem});
             this.hocKy_NamHocBindingNavigator.Location = new System.Drawing.Point(0, 0);
@@ -225,11 +228,10 @@
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemComboBox1,
             this.repositoryItemComboBox2});
-            this.gridControl1.Size = new System.Drawing.Size(481, 226);
+            this.gridControl1.Size = new System.Drawing.Size(481, 331);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
@@ -248,26 +250,22 @@
             this.colhocky.Name = "colhocky";
             this.colhocky.Visible = true;
             this.colhocky.VisibleIndex = 0;
-            this.colhocky.Width = 171;
             // 
             // repositoryItemComboBox1
             // 
             this.repositoryItemComboBox1.AutoHeight = false;
             this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemComboBox1.Items.AddRange(new object[] {
-            "1",
-            "2"});
             this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             // 
             // colnamhoc
             // 
             this.colnamhoc.Caption = "Năm học";
+            this.colnamhoc.ColumnEdit = this.repositoryItemComboBox2;
             this.colnamhoc.FieldName = "namhoc";
             this.colnamhoc.Name = "colnamhoc";
             this.colnamhoc.Visible = true;
             this.colnamhoc.VisibleIndex = 1;
-            this.colnamhoc.Width = 288;
             // 
             // repositoryItemComboBox2
             // 
@@ -276,11 +274,21 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemComboBox2.Name = "repositoryItemComboBox2";
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // quanlyhocky
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 251);
+            this.ClientSize = new System.Drawing.Size(481, 356);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.hocKy_NamHocBindingNavigator);
             this.Name = "quanlyhocky";
@@ -322,8 +330,10 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colhocky;
-        private DevExpress.XtraGrid.Columns.GridColumn colnamhoc;
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
+        private DevExpress.XtraGrid.Columns.GridColumn colnamhoc;
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox2;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+
     }
 }

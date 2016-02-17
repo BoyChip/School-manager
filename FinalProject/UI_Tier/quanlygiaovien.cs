@@ -17,5 +17,23 @@ namespace UI_Tier
         {
             InitializeComponent();
         }
+
+
+
+        private void quanlygiaovien_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataDataSet.GiaoVien' table. You can move, or remove it, as needed.
+            this.giaoVienTableAdapter.Fill(this.dataDataSet.GiaoVien);
+
+
+        }
+
+        private void giaoVienBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.giaoVienBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dataDataSet);
+
+        }
     }
 }

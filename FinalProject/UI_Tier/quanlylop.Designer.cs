@@ -46,6 +46,7 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.lopBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -88,6 +89,7 @@
             this.tableAdapterManager.KhoiTableAdapter = null;
             this.tableAdapterManager.LopTableAdapter = this.lopTableAdapter;
             this.tableAdapterManager.MonHocTableAdapter = null;
+            this.tableAdapterManager.ToBoMonTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = UI_Tier.dataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // lopBindingNavigator
@@ -108,6 +110,7 @@
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
+            this.toolStripButton1,
             this.bindingNavigatorDeleteItem,
             this.lopBindingNavigatorSaveItem});
             this.lopBindingNavigator.Location = new System.Drawing.Point(0, 0);
@@ -205,6 +208,16 @@
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // lopBindingNavigatorSaveItem
             // 
@@ -327,6 +340,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colmakhoi;
         private DevExpress.XtraGrid.Columns.GridColumn colmagiaovien;
         private DevExpress.XtraGrid.Columns.GridColumn colnamhoc;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
 
     }
 }
