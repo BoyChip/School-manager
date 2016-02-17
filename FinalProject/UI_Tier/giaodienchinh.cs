@@ -171,7 +171,23 @@ namespace UI_Tier
 
         private void button_danhsach_hocsinh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            thongkedanhsachhocsinh _tk_danhsachhocsinh = new thongkedanhsachhocsinh();
+            _tk_danhsachhocsinh.MdiParent = this;
+            _tk_danhsachhocsinh.Show();
+        }
 
+        private void button_danhsach_giaovien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            thongkedanhsachgiaovien _tk_danhsachgiaovien = new thongkedanhsachgiaovien();
+            _tk_danhsachgiaovien.MdiParent = this;
+            _tk_danhsachgiaovien.Show();
+        }
+
+        private void button_danhsach_lop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            thongkedanhsachlop _tk_danhsachlop = new thongkedanhsachlop();
+            _tk_danhsachlop.MdiParent = this;
+            _tk_danhsachlop.Show();
         }
     }
 }

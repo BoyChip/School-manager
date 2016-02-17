@@ -117,7 +117,7 @@
             this.toBoMonBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.toBoMonBindingNavigator.Name = "toBoMonBindingNavigator";
             this.toBoMonBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.toBoMonBindingNavigator.Size = new System.Drawing.Size(554, 25);
+            this.toBoMonBindingNavigator.Size = new System.Drawing.Size(381, 25);
             this.toBoMonBindingNavigator.TabIndex = 0;
             this.toBoMonBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -232,7 +232,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 25);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(554, 400);
+            this.gridControl1.Size = new System.Drawing.Size(381, 196);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -253,6 +253,7 @@
             this.colma_to_bomon.Name = "colma_to_bomon";
             this.colma_to_bomon.Visible = true;
             this.colma_to_bomon.VisibleIndex = 0;
+            this.colma_to_bomon.Width = 156;
             // 
             // colten_to_bomon
             // 
@@ -261,15 +262,17 @@
             this.colten_to_bomon.Name = "colten_to_bomon";
             this.colten_to_bomon.Visible = true;
             this.colten_to_bomon.VisibleIndex = 1;
+            this.colten_to_bomon.Width = 207;
             // 
             // quanlytobomon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 425);
+            this.ClientSize = new System.Drawing.Size(381, 221);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.toBoMonBindingNavigator);
             this.Name = "quanlytobomon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ TỔ - BỘ MÔN";
             this.Load += new System.EventHandler(this.quanlytobomon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).EndInit();

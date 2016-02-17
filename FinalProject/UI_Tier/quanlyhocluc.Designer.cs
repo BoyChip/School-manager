@@ -55,27 +55,38 @@
             this.colhanhkiem = new DevExpress.XtraGrid.Columns.GridColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEdit4 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEdit5 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEdit6 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEdit7 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.mahocsinhTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.hoclucTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.hoclucTextEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.hoclucTextEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.hoclucTextEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.danhGiaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.danhGiaBindingNavigator)).BeginInit();
             this.danhGiaBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mahocsinhTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoclucTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoclucTextEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoclucTextEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoclucTextEdit3.Properties)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataDataSet
@@ -135,9 +146,10 @@
             this.danhGiaBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.danhGiaBindingNavigator.Name = "danhGiaBindingNavigator";
             this.danhGiaBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.danhGiaBindingNavigator.Size = new System.Drawing.Size(777, 25);
+            this.danhGiaBindingNavigator.Size = new System.Drawing.Size(946, 25);
             this.danhGiaBindingNavigator.TabIndex = 0;
             this.danhGiaBindingNavigator.Text = "bindingNavigator1";
+            this.danhGiaBindingNavigator.RefreshItems += new System.EventHandler(this.danhGiaBindingNavigator_RefreshItems);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -249,7 +261,9 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 25);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(777, 305);
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemComboBox1});
+            this.gridControl1.Size = new System.Drawing.Size(946, 408);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -275,10 +289,12 @@
             // colhocluc
             // 
             this.colhocluc.Caption = "Học lực";
+            this.colhocluc.ColumnEdit = this.repositoryItemComboBox1;
             this.colhocluc.FieldName = "hocluc";
             this.colhocluc.Name = "colhocluc";
             this.colhocluc.Visible = true;
             this.colhocluc.VisibleIndex = 1;
+            this.colhocluc.Width = 661;
             // 
             // colhanhkiem
             // 
@@ -297,18 +313,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(485, 7);
+            this.label2.Location = new System.Drawing.Point(485, 6);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Học lực";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(379, 3);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(100, 20);
-            this.textEdit1.TabIndex = 4;
             // 
             // textEdit2
             // 
@@ -357,28 +366,84 @@
             // 
             // textEdit7
             // 
-            this.textEdit7.Location = new System.Drawing.Point(338, 155);
+            this.textEdit7.Location = new System.Drawing.Point(533, 3);
             this.textEdit7.Name = "textEdit7";
             this.textEdit7.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.textEdit7.Size = new System.Drawing.Size(100, 20);
             this.textEdit7.TabIndex = 10;
             // 
-            // comboBox1
+            // mahocsinhTextEdit
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(533, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 11;
+            this.mahocsinhTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.danhGiaBindingSource, "mahocsinh", true));
+            this.mahocsinhTextEdit.Location = new System.Drawing.Point(379, 3);
+            this.mahocsinhTextEdit.Name = "mahocsinhTextEdit";
+            this.mahocsinhTextEdit.Size = new System.Drawing.Size(100, 20);
+            this.mahocsinhTextEdit.TabIndex = 13;
+            // 
+            // hoclucTextEdit
+            // 
+            this.hoclucTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.danhGiaBindingSource, "hocluc", true));
+            this.hoclucTextEdit.Location = new System.Drawing.Point(533, 3);
+            this.hoclucTextEdit.Name = "hoclucTextEdit";
+            this.hoclucTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.hoclucTextEdit.Size = new System.Drawing.Size(100, 20);
+            this.hoclucTextEdit.TabIndex = 15;
+            // 
+            // hoclucTextEdit1
+            // 
+            this.hoclucTextEdit1.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.danhGiaBindingSource, "hocluc", true));
+            this.hoclucTextEdit1.Location = new System.Drawing.Point(533, 3);
+            this.hoclucTextEdit1.Name = "hoclucTextEdit1";
+            this.hoclucTextEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.hoclucTextEdit1.Size = new System.Drawing.Size(100, 20);
+            this.hoclucTextEdit1.TabIndex = 18;
+            // 
+            // repositoryItemComboBox1
+            // 
+            this.repositoryItemComboBox1.AutoHeight = false;
+            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
+            // 
+            // hoclucTextEdit2
+            // 
+            this.hoclucTextEdit2.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.danhGiaBindingSource, "hocluc", true));
+            this.hoclucTextEdit2.Location = new System.Drawing.Point(533, 3);
+            this.hoclucTextEdit2.Name = "hoclucTextEdit2";
+            this.hoclucTextEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.hoclucTextEdit2.Size = new System.Drawing.Size(100, 20);
+            this.hoclucTextEdit2.TabIndex = 21;
+            // 
+            // hoclucTextEdit3
+            // 
+            this.hoclucTextEdit3.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.danhGiaBindingSource, "hocluc", true));
+            this.hoclucTextEdit3.Location = new System.Drawing.Point(0, 2);
+            this.hoclucTextEdit3.Name = "hoclucTextEdit3";
+            this.hoclucTextEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.hoclucTextEdit3.Size = new System.Drawing.Size(100, 20);
+            this.hoclucTextEdit3.TabIndex = 24;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.hoclucTextEdit3);
+            this.groupBox1.Location = new System.Drawing.Point(533, 1);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(100, 22);
+            this.groupBox1.TabIndex = 25;
+            this.groupBox1.TabStop = false;
             // 
             // quanlyhocluc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 330);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textEdit1);
+            this.ClientSize = new System.Drawing.Size(946, 433);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.mahocsinhTextEdit);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gridControl1);
@@ -389,6 +454,9 @@
             this.Controls.Add(this.textEdit5);
             this.Controls.Add(this.textEdit6);
             this.Controls.Add(this.textEdit7);
+            this.Controls.Add(this.hoclucTextEdit);
+            this.Controls.Add(this.hoclucTextEdit1);
+            this.Controls.Add(this.hoclucTextEdit2);
             this.Name = "quanlyhocluc";
             this.Text = "QUẢN LÝ HỌC LỰC";
             this.Load += new System.EventHandler(this.quanlyhocluc_Load);
@@ -399,13 +467,19 @@
             this.danhGiaBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mahocsinhTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoclucTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoclucTextEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoclucTextEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoclucTextEdit3.Properties)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -438,13 +512,18 @@
         private DevExpress.XtraGrid.Columns.GridColumn colhanhkiem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.ComboBoxEdit textEdit2;
         private DevExpress.XtraEditors.ComboBoxEdit textEdit3;
         private DevExpress.XtraEditors.ComboBoxEdit textEdit4;
         private DevExpress.XtraEditors.ComboBoxEdit textEdit5;
         private DevExpress.XtraEditors.ComboBoxEdit textEdit6;
         private DevExpress.XtraEditors.ComboBoxEdit textEdit7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private DevExpress.XtraEditors.TextEdit mahocsinhTextEdit;
+        private DevExpress.XtraEditors.ComboBoxEdit hoclucTextEdit;
+        private DevExpress.XtraEditors.ComboBoxEdit hoclucTextEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
+        private DevExpress.XtraEditors.ComboBoxEdit hoclucTextEdit2;
+        private DevExpress.XtraEditors.ComboBoxEdit hoclucTextEdit3;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

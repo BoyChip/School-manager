@@ -67,8 +67,6 @@
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -127,11 +125,11 @@
             this.backstageViewControl1.Items.Add(this.button_quanlynguoidung);
             this.backstageViewControl1.Items.Add(this.backstageViewItemSeparator2);
             this.backstageViewControl1.Items.Add(this.button_thoat);
-            this.backstageViewControl1.Location = new System.Drawing.Point(797, 61);
+            this.backstageViewControl1.Location = new System.Drawing.Point(745, 57);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.Ribbon = this.ribbonControl1;
             this.backstageViewControl1.SelectedTab = null;
-            this.backstageViewControl1.Size = new System.Drawing.Size(137, 64);
+            this.backstageViewControl1.Size = new System.Drawing.Size(137, 63);
             this.backstageViewControl1.TabIndex = 2;
             this.backstageViewControl1.Text = "backstageViewControl1";
             // 
@@ -267,6 +265,7 @@
             this.button_danhsach_giaovien.Id = 14;
             this.button_danhsach_giaovien.Name = "button_danhsach_giaovien";
             this.button_danhsach_giaovien.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.button_danhsach_giaovien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_danhsach_giaovien_ItemClick);
             // 
             // button_danhsach_lop
             // 
@@ -274,6 +273,7 @@
             this.button_danhsach_lop.Id = 15;
             this.button_danhsach_lop.Name = "button_danhsach_lop";
             this.button_danhsach_lop.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.button_danhsach_lop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_danhsach_lop_ItemClick);
             // 
             // button_thongke_namhoc_theolop
             // 
@@ -390,27 +390,9 @@
             // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup6,
-            this.ribbonPageGroup7,
             this.ribbonPageGroup8});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "Thống kê";
-            // 
-            // ribbonPageGroup6
-            // 
-            this.ribbonPageGroup6.AllowTextClipping = false;
-            this.ribbonPageGroup6.ItemLinks.Add(this.button_thongke_hocky_theolop);
-            this.ribbonPageGroup6.ItemLinks.Add(this.button_thongke_hocky_monhoc);
-            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.Text = "Học Kỳ";
-            // 
-            // ribbonPageGroup7
-            // 
-            this.ribbonPageGroup7.AllowTextClipping = false;
-            this.ribbonPageGroup7.ItemLinks.Add(this.button_thongke_namhoc_theolop);
-            this.ribbonPageGroup7.ItemLinks.Add(this.button_thongke_namhoc_monhoc);
-            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            this.ribbonPageGroup7.Text = "Năm học";
             // 
             // ribbonPageGroup8
             // 
@@ -497,8 +479,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;

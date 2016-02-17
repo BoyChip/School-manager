@@ -108,9 +108,11 @@
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // colmagiaovien
             // 
+            this.colmagiaovien.Caption = "Mã giáo viên";
             this.colmagiaovien.FieldName = "magiaovien";
             this.colmagiaovien.Name = "colmagiaovien";
             this.colmagiaovien.Visible = true;
@@ -118,6 +120,7 @@
             // 
             // colhogiaovien
             // 
+            this.colhogiaovien.Caption = "Họ";
             this.colhogiaovien.FieldName = "hogiaovien";
             this.colhogiaovien.Name = "colhogiaovien";
             this.colhogiaovien.Visible = true;
@@ -125,6 +128,7 @@
             // 
             // coltengiaovien
             // 
+            this.coltengiaovien.Caption = "Tên";
             this.coltengiaovien.FieldName = "tengiaovien";
             this.coltengiaovien.Name = "coltengiaovien";
             this.coltengiaovien.Visible = true;
@@ -132,6 +136,7 @@
             // 
             // colgioitinh
             // 
+            this.colgioitinh.Caption = "Giới tính";
             this.colgioitinh.FieldName = "gioitinh";
             this.colgioitinh.Name = "colgioitinh";
             this.colgioitinh.Visible = true;
@@ -139,6 +144,7 @@
             // 
             // colngaysinh
             // 
+            this.colngaysinh.Caption = "Ngày sinh";
             this.colngaysinh.FieldName = "ngaysinh";
             this.colngaysinh.Name = "colngaysinh";
             this.colngaysinh.Visible = true;
@@ -146,6 +152,7 @@
             // 
             // coldiachi
             // 
+            this.coldiachi.Caption = "Địa chỉ";
             this.coldiachi.FieldName = "diachi";
             this.coldiachi.Name = "coldiachi";
             this.coldiachi.Visible = true;
@@ -153,6 +160,7 @@
             // 
             // coldienthoai
             // 
+            this.coldienthoai.Caption = "Điện thoại";
             this.coldienthoai.FieldName = "dienthoai";
             this.coldienthoai.Name = "coldienthoai";
             this.coldienthoai.Visible = true;
@@ -160,6 +168,7 @@
             // 
             // colchucvu
             // 
+            this.colchucvu.Caption = "Chức vụ";
             this.colchucvu.FieldName = "chucvu";
             this.colchucvu.Name = "colchucvu";
             this.colchucvu.Visible = true;
@@ -167,6 +176,7 @@
             // 
             // colchuyenmon
             // 
+            this.colchuyenmon.Caption = "Chuyên môn";
             this.colchuyenmon.FieldName = "chuyenmon";
             this.colchuyenmon.Name = "colchuyenmon";
             this.colchuyenmon.Visible = true;
@@ -174,6 +184,7 @@
             // 
             // colma_to_bomon
             // 
+            this.colma_to_bomon.Caption = "Tổ - bộ môn";
             this.colma_to_bomon.FieldName = "ma_to_bomon";
             this.colma_to_bomon.Name = "colma_to_bomon";
             this.colma_to_bomon.Visible = true;

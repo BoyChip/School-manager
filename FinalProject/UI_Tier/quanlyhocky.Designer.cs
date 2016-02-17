@@ -46,6 +46,7 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.hocKy_NamHocBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -53,7 +54,6 @@
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.colnamhoc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hocKy_NamHocBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hocKy_NamHocBindingNavigator)).BeginInit();
@@ -98,6 +98,7 @@
             this.hocKy_NamHocBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
             this.hocKy_NamHocBindingNavigator.BindingSource = this.hocKy_NamHocBindingSource;
             this.hocKy_NamHocBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.hocKy_NamHocBindingNavigator.CountItemFormat = "/{0}";
             this.hocKy_NamHocBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
             this.hocKy_NamHocBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
@@ -120,7 +121,7 @@
             this.hocKy_NamHocBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.hocKy_NamHocBindingNavigator.Name = "hocKy_NamHocBindingNavigator";
             this.hocKy_NamHocBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.hocKy_NamHocBindingNavigator.Size = new System.Drawing.Size(481, 25);
+            this.hocKy_NamHocBindingNavigator.Size = new System.Drawing.Size(394, 25);
             this.hocKy_NamHocBindingNavigator.TabIndex = 0;
             this.hocKy_NamHocBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -136,8 +137,8 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(26, 22);
+            this.bindingNavigatorCountItem.Text = "/{0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorDeleteItem
@@ -209,6 +210,16 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
             // hocKy_NamHocBindingNavigatorSaveItem
             // 
             this.hocKy_NamHocBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -228,7 +239,7 @@
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemComboBox1,
             this.repositoryItemComboBox2});
-            this.gridControl1.Size = new System.Drawing.Size(481, 331);
+            this.gridControl1.Size = new System.Drawing.Size(394, 184);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -274,24 +285,15 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemComboBox2.Name = "repositoryItemComboBox2";
             // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
             // quanlyhocky
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 356);
+            this.ClientSize = new System.Drawing.Size(394, 209);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.hocKy_NamHocBindingNavigator);
             this.Name = "quanlyhocky";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ HỌC KỲ - NĂM HỌC";
             this.Load += new System.EventHandler(this.quanlyhocky_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).EndInit();

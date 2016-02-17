@@ -38,3 +38,10 @@ C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\
 C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.doimatkhau.resources
 C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.timkiemgiaovien.resources
 C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.quanlynguoidung.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.PrintRibbonControllerResources.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.thongkedanhsachhocsinh.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.XRDesignRibbonControllerResources.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\RdlCompile.cache
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\RdlCompile.compiled
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.thongkedanhsachgiaovien.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.thongkedanhsachlop.resources

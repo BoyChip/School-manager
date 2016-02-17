@@ -123,7 +123,7 @@
             this.danhGiaBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
             this.danhGiaBindingNavigator.BindingSource = this.danhGiaBindingSource;
             this.danhGiaBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.danhGiaBindingNavigator.CountItemFormat = "/ {0}";
+            this.danhGiaBindingNavigator.CountItemFormat = "/{0}";
             this.danhGiaBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
             this.danhGiaBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
@@ -146,7 +146,7 @@
             this.danhGiaBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.danhGiaBindingNavigator.Name = "danhGiaBindingNavigator";
             this.danhGiaBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.danhGiaBindingNavigator.Size = new System.Drawing.Size(736, 25);
+            this.danhGiaBindingNavigator.Size = new System.Drawing.Size(946, 25);
             this.danhGiaBindingNavigator.TabIndex = 0;
             this.danhGiaBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -162,8 +162,8 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(29, 22);
-            this.bindingNavigatorCountItem.Text = "/ {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(26, 22);
+            this.bindingNavigatorCountItem.Text = "/{0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorDeleteItem
@@ -281,7 +281,7 @@
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemComboBox1});
-            this.gridControl1.Size = new System.Drawing.Size(736, 301);
+            this.gridControl1.Size = new System.Drawing.Size(946, 408);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -303,6 +303,7 @@
             this.colmahocsinh.Name = "colmahocsinh";
             this.colmahocsinh.Visible = true;
             this.colmahocsinh.VisibleIndex = 0;
+            this.colmahocsinh.Width = 310;
             // 
             // colhocluc
             // 
@@ -317,6 +318,7 @@
             this.colhanhkiem.Name = "colhanhkiem";
             this.colhanhkiem.Visible = true;
             this.colhanhkiem.VisibleIndex = 1;
+            this.colhanhkiem.Width = 656;
             // 
             // repositoryItemComboBox1
             // 
@@ -329,7 +331,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 326);
+            this.ClientSize = new System.Drawing.Size(946, 433);
             this.Controls.Add(mahocsinhLabel);
             this.Controls.Add(this.hanhkiemTextEdit);
             this.Controls.Add(hanhkiemLabel);

@@ -73,6 +73,7 @@
             this.tableAdapterManager.KhoiTableAdapter = this.khoiTableAdapter;
             this.tableAdapterManager.LopTableAdapter = null;
             this.tableAdapterManager.MonHocTableAdapter = null;
+            this.tableAdapterManager.ToBoMonTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = UI_Tier.dataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // khoiBindingSource1
@@ -87,7 +88,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(369, 261);
+            this.gridControl1.Size = new System.Drawing.Size(291, 141);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -126,9 +127,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 261);
+            this.ClientSize = new System.Drawing.Size(291, 141);
             this.Controls.Add(this.gridControl1);
             this.Name = "quanlykhoilop";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DANH SÁCH KHỐI LỚP";
             this.Load += new System.EventHandler(this.quanlykhoilop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).EndInit();

@@ -53,11 +53,11 @@
             this.giaoVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colmagiaovien = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.colmatkhau = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colphanquyennguoidung = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dangNhapBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dangNhapBindingNavigator)).BeginInit();
@@ -280,6 +280,13 @@
             this.colmagiaovien.VisibleIndex = 0;
             this.colmagiaovien.Width = 227;
             // 
+            // repositoryItemComboBox1
+            // 
+            this.repositoryItemComboBox1.AutoHeight = false;
+            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
+            // 
             // colmatkhau
             // 
             this.colmatkhau.FieldName = "matkhau";
@@ -289,27 +296,11 @@
             // 
             this.colphanquyennguoidung.Caption = "Phân quyền";
             this.colphanquyennguoidung.ColumnEdit = this.repositoryItemComboBox2;
-            this.colphanquyennguoidung.FieldName = "phanquyennguoidung";
+            this.colphanquyennguoidung.FieldName = "FK_DangNhap_GiaoVien.phanquyennguoidung";
             this.colphanquyennguoidung.Name = "colphanquyennguoidung";
             this.colphanquyennguoidung.Visible = true;
             this.colphanquyennguoidung.VisibleIndex = 2;
             this.colphanquyennguoidung.Width = 261;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "Tên giáo viên";
-            this.gridColumn1.FieldName = "tengiaovien";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
-            this.gridColumn1.Width = 168;
-            // 
-            // repositoryItemComboBox1
-            // 
-            this.repositoryItemComboBox1.AutoHeight = false;
-            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             // 
             // repositoryItemComboBox2
             // 
@@ -317,6 +308,15 @@
             this.repositoryItemComboBox2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemComboBox2.Name = "repositoryItemComboBox2";
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Tên giáo viên";
+            this.gridColumn1.FieldName = "FK_DangNhap_GiaoVien";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 1;
+            this.gridColumn1.Width = 168;
             // 
             // quanlynguoidung
             // 

@@ -44,10 +44,6 @@
             this.colnoisinh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldantoc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldiachi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colhotencha = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colnghenghiepcha = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colhotenme = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colnghenghiepme = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldienthoai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colghichu = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).BeginInit();
@@ -92,7 +88,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1030, 330);
+            this.gridControl1.Size = new System.Drawing.Size(1162, 330);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -109,18 +105,16 @@
             this.colnoisinh,
             this.coldantoc,
             this.coldiachi,
-            this.colhotencha,
-            this.colnghenghiepcha,
-            this.colhotenme,
-            this.colnghenghiepme,
             this.coldienthoai,
             this.colghichu});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsFind.AlwaysVisible = true;
+            this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // colmahocsinh
             // 
+            this.colmahocsinh.Caption = "Mã học sinh";
             this.colmahocsinh.FieldName = "mahocsinh";
             this.colmahocsinh.Name = "colmahocsinh";
             this.colmahocsinh.Visible = true;
@@ -128,6 +122,7 @@
             // 
             // colmalop
             // 
+            this.colmalop.Caption = "Mã lớp";
             this.colmalop.FieldName = "malop";
             this.colmalop.Name = "colmalop";
             this.colmalop.Visible = true;
@@ -135,6 +130,7 @@
             // 
             // colhohocsinh
             // 
+            this.colhohocsinh.Caption = "Họ";
             this.colhohocsinh.FieldName = "hohocsinh";
             this.colhohocsinh.Name = "colhohocsinh";
             this.colhohocsinh.Visible = true;
@@ -142,6 +138,7 @@
             // 
             // coltenhocsinh
             // 
+            this.coltenhocsinh.Caption = "Tên";
             this.coltenhocsinh.FieldName = "tenhocsinh";
             this.coltenhocsinh.Name = "coltenhocsinh";
             this.coltenhocsinh.Visible = true;
@@ -149,6 +146,7 @@
             // 
             // colgioitinh
             // 
+            this.colgioitinh.Caption = "Giới tính";
             this.colgioitinh.FieldName = "gioitinh";
             this.colgioitinh.Name = "colgioitinh";
             this.colgioitinh.Visible = true;
@@ -156,6 +154,7 @@
             // 
             // colngaysinh
             // 
+            this.colngaysinh.Caption = "Ngày sinh";
             this.colngaysinh.FieldName = "ngaysinh";
             this.colngaysinh.Name = "colngaysinh";
             this.colngaysinh.Visible = true;
@@ -163,6 +162,7 @@
             // 
             // colnoisinh
             // 
+            this.colnoisinh.Caption = "Nơi sinh";
             this.colnoisinh.FieldName = "noisinh";
             this.colnoisinh.Name = "colnoisinh";
             this.colnoisinh.Visible = true;
@@ -170,6 +170,7 @@
             // 
             // coldantoc
             // 
+            this.coldantoc.Caption = "Dân tộc";
             this.coldantoc.FieldName = "dantoc";
             this.coldantoc.Name = "coldantoc";
             this.coldantoc.Visible = true;
@@ -177,58 +178,33 @@
             // 
             // coldiachi
             // 
+            this.coldiachi.Caption = "Địa chỉ";
             this.coldiachi.FieldName = "diachi";
             this.coldiachi.Name = "coldiachi";
             this.coldiachi.Visible = true;
             this.coldiachi.VisibleIndex = 8;
             // 
-            // colhotencha
-            // 
-            this.colhotencha.FieldName = "hotencha";
-            this.colhotencha.Name = "colhotencha";
-            this.colhotencha.Visible = true;
-            this.colhotencha.VisibleIndex = 9;
-            // 
-            // colnghenghiepcha
-            // 
-            this.colnghenghiepcha.FieldName = "nghenghiepcha";
-            this.colnghenghiepcha.Name = "colnghenghiepcha";
-            this.colnghenghiepcha.Visible = true;
-            this.colnghenghiepcha.VisibleIndex = 10;
-            // 
-            // colhotenme
-            // 
-            this.colhotenme.FieldName = "hotenme";
-            this.colhotenme.Name = "colhotenme";
-            this.colhotenme.Visible = true;
-            this.colhotenme.VisibleIndex = 11;
-            // 
-            // colnghenghiepme
-            // 
-            this.colnghenghiepme.FieldName = "nghenghiepme";
-            this.colnghenghiepme.Name = "colnghenghiepme";
-            this.colnghenghiepme.Visible = true;
-            this.colnghenghiepme.VisibleIndex = 12;
-            // 
             // coldienthoai
             // 
+            this.coldienthoai.Caption = "Điện thoại";
             this.coldienthoai.FieldName = "dienthoai";
             this.coldienthoai.Name = "coldienthoai";
             this.coldienthoai.Visible = true;
-            this.coldienthoai.VisibleIndex = 13;
+            this.coldienthoai.VisibleIndex = 9;
             // 
             // colghichu
             // 
+            this.colghichu.Caption = "Ghi chú";
             this.colghichu.FieldName = "ghichu";
             this.colghichu.Name = "colghichu";
             this.colghichu.Visible = true;
-            this.colghichu.VisibleIndex = 14;
+            this.colghichu.VisibleIndex = 10;
             // 
             // timkiemhocsinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1030, 330);
+            this.ClientSize = new System.Drawing.Size(1162, 330);
             this.Controls.Add(this.gridControl1);
             this.Name = "timkiemhocsinh";
             this.Text = "TRA CỨU HỌC SINH";
@@ -258,10 +234,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colnoisinh;
         private DevExpress.XtraGrid.Columns.GridColumn coldantoc;
         private DevExpress.XtraGrid.Columns.GridColumn coldiachi;
-        private DevExpress.XtraGrid.Columns.GridColumn colhotencha;
-        private DevExpress.XtraGrid.Columns.GridColumn colnghenghiepcha;
-        private DevExpress.XtraGrid.Columns.GridColumn colhotenme;
-        private DevExpress.XtraGrid.Columns.GridColumn colnghenghiepme;
         private DevExpress.XtraGrid.Columns.GridColumn coldienthoai;
         private DevExpress.XtraGrid.Columns.GridColumn colghichu;
     }

@@ -120,7 +120,7 @@
             this.lopBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.lopBindingNavigator.Name = "lopBindingNavigator";
             this.lopBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.lopBindingNavigator.Size = new System.Drawing.Size(670, 25);
+            this.lopBindingNavigator.Size = new System.Drawing.Size(560, 25);
             this.lopBindingNavigator.TabIndex = 0;
             this.lopBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -235,7 +235,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 25);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(670, 350);
+            this.gridControl1.Size = new System.Drawing.Size(560, 198);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -296,10 +296,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(670, 375);
+            this.ClientSize = new System.Drawing.Size(560, 223);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.lopBindingNavigator);
             this.Name = "quanlylop";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ DANH SÁCH LỚP";
             this.Load += new System.EventHandler(this.quanlylop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).EndInit();

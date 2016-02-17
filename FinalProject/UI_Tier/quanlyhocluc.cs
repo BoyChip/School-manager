@@ -32,5 +32,10 @@ namespace UI_Tier
             this.danhGiaTableAdapter.Fill(this.dataDataSet.DanhGia);
 
         }
+
+        private void danhGiaBindingNavigator_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
     }
 }
