@@ -35,5 +35,40 @@ namespace UI_Tier
             this.tableAdapterManager.UpdateAll(this.dataDataSet);
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupControl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textEdit1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.giaoVienBindingSource.CancelEdit();
+        }
+
+        private void tengiaovienLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hogiaovienTextEdit_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

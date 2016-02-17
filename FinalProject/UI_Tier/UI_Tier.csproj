@@ -67,6 +67,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dataDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="doimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doimatkhau.Designer.cs">
+      <DependentUpon>doimatkhau.cs</DependentUpon>
+    </Compile>
     <Compile Include="giaodienchinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,12 @@
     <Compile Include="quanlymonhoc.Designer.cs">
       <DependentUpon>quanlymonhoc.cs</DependentUpon>
     </Compile>
+    <Compile Include="quanlynguoidung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanlynguoidung.Designer.cs">
+      <DependentUpon>quanlynguoidung.cs</DependentUpon>
+    </Compile>
     <Compile Include="quanlyphanconggiaovien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,8 +159,23 @@
     <Compile Include="quanlytobomon.Designer.cs">
       <DependentUpon>quanlytobomon.cs</DependentUpon>
     </Compile>
+    <Compile Include="timkiemgiaovien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="timkiemgiaovien.Designer.cs">
+      <DependentUpon>timkiemgiaovien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="timkiemhocsinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="timkiemhocsinh.Designer.cs">
+      <DependentUpon>timkiemhocsinh.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dangnhap.resx">
       <DependentUpon>dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doimatkhau.resx">
+      <DependentUpon>doimatkhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="giaodienchinh.resx">
       <DependentUpon>giaodienchinh.cs</DependentUpon>
@@ -160,6 +187,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanlydiemhocsinh.resx">
+      <DependentUpon>quanlydiemhocsinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="quanlygiaovien.resx">
       <DependentUpon>quanlygiaovien.cs</DependentUpon>
@@ -182,8 +212,20 @@
     <EmbeddedResource Include="quanlymonhoc.resx">
       <DependentUpon>quanlymonhoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="quanlynguoidung.resx">
+      <DependentUpon>quanlynguoidung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quanlyphanlophocsinh.resx">
+      <DependentUpon>quanlyphanlophocsinh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="quanlytobomon.resx">
       <DependentUpon>quanlytobomon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="timkiemgiaovien.resx">
+      <DependentUpon>timkiemgiaovien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="timkiemhocsinh.resx">
+      <DependentUpon>timkiemhocsinh.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="dataDataSet.xsc">

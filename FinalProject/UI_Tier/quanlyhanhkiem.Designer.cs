@@ -29,52 +29,65 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(quanlyhanhkiem));
             System.Windows.Forms.Label mahocsinhLabel;
             System.Windows.Forms.Label hanhkiemLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(quanlyhanhkiem));
             this.dataDataSet = new UI_Tier.dataDataSet();
             this.danhGiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.danhGiaTableAdapter = new UI_Tier.dataDataSetTableAdapters.DanhGiaTableAdapter();
             this.tableAdapterManager = new UI_Tier.dataDataSetTableAdapters.TableAdapterManager();
             this.danhGiaBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.danhGiaBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+            this.mahocsinhTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.hanhkiemTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colmahocsinh = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colhocluc = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colhanhkiem = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.mahocsinhTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.hanhkiemTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
+            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             mahocsinhLabel = new System.Windows.Forms.Label();
             hanhkiemLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.danhGiaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.danhGiaBindingNavigator)).BeginInit();
             this.danhGiaBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
-            this.splitContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahocsinhTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hanhkiemTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // mahocsinhLabel
+            // 
+            mahocsinhLabel.AutoSize = true;
+            mahocsinhLabel.Location = new System.Drawing.Point(311, 5);
+            mahocsinhLabel.Name = "mahocsinhLabel";
+            mahocsinhLabel.Size = new System.Drawing.Size(63, 13);
+            mahocsinhLabel.TabIndex = 1;
+            mahocsinhLabel.Text = "Mã học sinh";
+            // 
+            // hanhkiemLabel
+            // 
+            hanhkiemLabel.AutoSize = true;
+            hanhkiemLabel.Location = new System.Drawing.Point(486, 5);
+            hanhkiemLabel.Name = "hanhkiemLabel";
+            hanhkiemLabel.Size = new System.Drawing.Size(56, 13);
+            hanhkiemLabel.TabIndex = 5;
+            hanhkiemLabel.Text = "Hạnh kiểm";
             // 
             // dataDataSet
             // 
@@ -110,6 +123,7 @@
             this.danhGiaBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
             this.danhGiaBindingNavigator.BindingSource = this.danhGiaBindingSource;
             this.danhGiaBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.danhGiaBindingNavigator.CountItemFormat = "/ {0}";
             this.danhGiaBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
             this.danhGiaBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
@@ -122,6 +136,7 @@
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
+            this.toolStripButton1,
             this.bindingNavigatorDeleteItem,
             this.danhGiaBindingNavigatorSaveItem});
             this.danhGiaBindingNavigator.Location = new System.Drawing.Point(0, 0);
@@ -131,9 +146,34 @@
             this.danhGiaBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.danhGiaBindingNavigator.Name = "danhGiaBindingNavigator";
             this.danhGiaBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.danhGiaBindingNavigator.Size = new System.Drawing.Size(615, 25);
+            this.danhGiaBindingNavigator.Size = new System.Drawing.Size(736, 25);
             this.danhGiaBindingNavigator.TabIndex = 0;
             this.danhGiaBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(29, 22);
+            this.bindingNavigatorCountItem.Text = "/ {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -167,17 +207,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -185,7 +218,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -194,72 +227,62 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // bindingNavigatorAddNewItem
+            // toolStripButton1
             // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // danhGiaBindingNavigatorSaveItem
             // 
             this.danhGiaBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.danhGiaBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("danhGiaBindingNavigatorSaveItem.Image")));
             this.danhGiaBindingNavigatorSaveItem.Name = "danhGiaBindingNavigatorSaveItem";
-            this.danhGiaBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.danhGiaBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.danhGiaBindingNavigatorSaveItem.Text = "Save Data";
             this.danhGiaBindingNavigatorSaveItem.Click += new System.EventHandler(this.danhGiaBindingNavigatorSaveItem_Click);
             // 
-            // splitContainerControl1
+            // mahocsinhTextEdit
             // 
-            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 25);
-            this.splitContainerControl1.Name = "splitContainerControl1";
-            this.splitContainerControl1.Panel1.Controls.Add(this.simpleButton5);
-            this.splitContainerControl1.Panel1.Controls.Add(this.simpleButton4);
-            this.splitContainerControl1.Panel1.Controls.Add(this.simpleButton3);
-            this.splitContainerControl1.Panel1.Controls.Add(this.simpleButton2);
-            this.splitContainerControl1.Panel1.Controls.Add(this.simpleButton1);
-            this.splitContainerControl1.Panel1.Controls.Add(mahocsinhLabel);
-            this.splitContainerControl1.Panel1.Controls.Add(this.mahocsinhTextEdit);
-            this.splitContainerControl1.Panel1.Controls.Add(hanhkiemLabel);
-            this.splitContainerControl1.Panel1.Controls.Add(this.hanhkiemTextEdit);
-            this.splitContainerControl1.Panel1.Text = "Panel1";
-            this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
-            this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(615, 301);
-            this.splitContainerControl1.SplitterPosition = 232;
-            this.splitContainerControl1.TabIndex = 1;
-            this.splitContainerControl1.Text = "splitContainerControl1";
+            this.mahocsinhTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.danhGiaBindingSource, "mahocsinh", true));
+            this.mahocsinhTextEdit.Location = new System.Drawing.Point(380, 2);
+            this.mahocsinhTextEdit.Name = "mahocsinhTextEdit";
+            this.mahocsinhTextEdit.Size = new System.Drawing.Size(100, 20);
+            this.mahocsinhTextEdit.TabIndex = 2;
+            // 
+            // hanhkiemTextEdit
+            // 
+            this.hanhkiemTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.danhGiaBindingSource, "hanhkiem", true));
+            this.hanhkiemTextEdit.Location = new System.Drawing.Point(548, 2);
+            this.hanhkiemTextEdit.Name = "hanhkiemTextEdit";
+            this.hanhkiemTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.hanhkiemTextEdit.Size = new System.Drawing.Size(100, 20);
+            this.hanhkiemTextEdit.TabIndex = 6;
             // 
             // gridControl1
             // 
             this.gridControl1.DataSource = this.danhGiaBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
+            this.gridControl1.Location = new System.Drawing.Point(0, 25);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(378, 301);
-            this.gridControl1.TabIndex = 0;
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemComboBox1});
+            this.gridControl1.Size = new System.Drawing.Size(736, 301);
+            this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
@@ -275,6 +298,7 @@
             // 
             // colmahocsinh
             // 
+            this.colmahocsinh.Caption = "Mã học sinh";
             this.colmahocsinh.FieldName = "mahocsinh";
             this.colmahocsinh.Name = "colmahocsinh";
             this.colmahocsinh.Visible = true;
@@ -287,91 +311,30 @@
             // 
             // colhanhkiem
             // 
+            this.colhanhkiem.Caption = "Hạnh kiểm";
+            this.colhanhkiem.ColumnEdit = this.repositoryItemComboBox1;
             this.colhanhkiem.FieldName = "hanhkiem";
             this.colhanhkiem.Name = "colhanhkiem";
             this.colhanhkiem.Visible = true;
             this.colhanhkiem.VisibleIndex = 1;
             // 
-            // mahocsinhLabel
+            // repositoryItemComboBox1
             // 
-            mahocsinhLabel.AutoSize = true;
-            mahocsinhLabel.Location = new System.Drawing.Point(33, 19);
-            mahocsinhLabel.Name = "mahocsinhLabel";
-            mahocsinhLabel.Size = new System.Drawing.Size(61, 13);
-            mahocsinhLabel.TabIndex = 0;
-            mahocsinhLabel.Text = "mahocsinh:";
-            // 
-            // mahocsinhTextEdit
-            // 
-            this.mahocsinhTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.danhGiaBindingSource, "mahocsinh", true));
-            this.mahocsinhTextEdit.Location = new System.Drawing.Point(100, 16);
-            this.mahocsinhTextEdit.Name = "mahocsinhTextEdit";
-            this.mahocsinhTextEdit.Size = new System.Drawing.Size(100, 20);
-            this.mahocsinhTextEdit.TabIndex = 1;
-            // 
-            // hanhkiemLabel
-            // 
-            hanhkiemLabel.AutoSize = true;
-            hanhkiemLabel.Location = new System.Drawing.Point(33, 48);
-            hanhkiemLabel.Name = "hanhkiemLabel";
-            hanhkiemLabel.Size = new System.Drawing.Size(56, 13);
-            hanhkiemLabel.TabIndex = 4;
-            hanhkiemLabel.Text = "hanhkiem:";
-            // 
-            // hanhkiemTextEdit
-            // 
-            this.hanhkiemTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.danhGiaBindingSource, "hanhkiem", true));
-            this.hanhkiemTextEdit.Location = new System.Drawing.Point(100, 45);
-            this.hanhkiemTextEdit.Name = "hanhkiemTextEdit";
-            this.hanhkiemTextEdit.Size = new System.Drawing.Size(100, 20);
-            this.hanhkiemTextEdit.TabIndex = 5;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(26, 107);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton1.TabIndex = 6;
-            this.simpleButton1.Text = "Thêm";
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Location = new System.Drawing.Point(107, 107);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton2.TabIndex = 7;
-            this.simpleButton2.Text = "Sửa";
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Location = new System.Drawing.Point(26, 136);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton3.TabIndex = 8;
-            this.simpleButton3.Text = "Xóa";
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.Location = new System.Drawing.Point(26, 165);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton4.TabIndex = 9;
-            this.simpleButton4.Text = "Lưu";
-            // 
-            // simpleButton5
-            // 
-            this.simpleButton5.Location = new System.Drawing.Point(107, 136);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton5.TabIndex = 10;
-            this.simpleButton5.Text = "Hủy";
+            this.repositoryItemComboBox1.AutoHeight = false;
+            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             // 
             // quanlyhanhkiem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(615, 326);
-            this.Controls.Add(this.splitContainerControl1);
+            this.ClientSize = new System.Drawing.Size(736, 326);
+            this.Controls.Add(mahocsinhLabel);
+            this.Controls.Add(this.hanhkiemTextEdit);
+            this.Controls.Add(hanhkiemLabel);
+            this.Controls.Add(this.gridControl1);
+            this.Controls.Add(this.mahocsinhTextEdit);
             this.Controls.Add(this.danhGiaBindingNavigator);
             this.Name = "quanlyhanhkiem";
             this.Text = "QUẢN LÝ HẠNH KIỂM";
@@ -381,12 +344,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.danhGiaBindingNavigator)).EndInit();
             this.danhGiaBindingNavigator.ResumeLayout(false);
             this.danhGiaBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
-            this.splitContainerControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahocsinhTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hanhkiemTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -411,18 +373,14 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton danhGiaBindingNavigatorSaveItem;
-        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
+        private DevExpress.XtraEditors.TextEdit mahocsinhTextEdit;
+        private DevExpress.XtraEditors.ComboBoxEdit hanhkiemTextEdit;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private DevExpress.XtraGrid.Columns.GridColumn colmahocsinh;
         private DevExpress.XtraGrid.Columns.GridColumn colhocluc;
         private DevExpress.XtraGrid.Columns.GridColumn colhanhkiem;
-        private DevExpress.XtraEditors.TextEdit mahocsinhTextEdit;
-        private DevExpress.XtraEditors.TextEdit hanhkiemTextEdit;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
     }
 }

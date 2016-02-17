@@ -64,9 +64,8 @@ namespace UI_Tier
 
         private void button_phanlop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            quanlyphanlophocsinh phanlop = new quanlyphanlophocsinh();
-            phanlop.MdiParent = this;
-            phanlop.Show();
+            quanlyphanlophocsinh _phanlop = new quanlyphanlophocsinh();
+            _phanlop.Show();
         }
 
         private void giaodienchinh_Load(object sender, EventArgs e)
@@ -142,6 +141,37 @@ namespace UI_Tier
         private void button_thongke_hocky_theolop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
            
+        }
+
+        private void barButtonItem20_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            timkiemhocsinh _timkiemhocsinh = new timkiemhocsinh();
+            _timkiemhocsinh.MdiParent = this;
+            _timkiemhocsinh.Show();
+        }
+
+        private void barButtonItem21_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            timkiemgiaovien _timkiemgiaovien = new timkiemgiaovien();
+            _timkiemgiaovien.MdiParent = this;
+            _timkiemgiaovien.Show();
+        }
+
+        private void button_doimatkhau_ItemClick(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
+        {
+            doimatkhau _doimatkhau = new doimatkhau();
+            _doimatkhau.Show();
+        }
+
+        private void button_quanlynguoidung_ItemClick(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
+        {
+            quanlynguoidung _ql_nguoidung = new quanlynguoidung();
+            _ql_nguoidung.Show();
+        }
+
+        private void button_danhsach_hocsinh_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }

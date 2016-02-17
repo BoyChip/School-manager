@@ -42,7 +42,6 @@
             this.button_quanlyhocsinh = new DevExpress.XtraBars.BarButtonItem();
             this.button_phanlop = new DevExpress.XtraBars.BarButtonItem();
             this.button_giaovien = new DevExpress.XtraBars.BarButtonItem();
-            this.button_phancong = new DevExpress.XtraBars.BarButtonItem();
             this.button_monhoc = new DevExpress.XtraBars.BarButtonItem();
             this.button_diem = new DevExpress.XtraBars.BarButtonItem();
             this.button_lop = new DevExpress.XtraBars.BarButtonItem();
@@ -90,7 +89,6 @@
             this.button_quanlyhocsinh,
             this.button_phanlop,
             this.button_giaovien,
-            this.button_phancong,
             this.button_monhoc,
             this.button_diem,
             this.button_lop,
@@ -129,11 +127,11 @@
             this.backstageViewControl1.Items.Add(this.button_quanlynguoidung);
             this.backstageViewControl1.Items.Add(this.backstageViewItemSeparator2);
             this.backstageViewControl1.Items.Add(this.button_thoat);
-            this.backstageViewControl1.Location = new System.Drawing.Point(813, 65);
+            this.backstageViewControl1.Location = new System.Drawing.Point(797, 61);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.Ribbon = this.ribbonControl1;
             this.backstageViewControl1.SelectedTab = null;
-            this.backstageViewControl1.Size = new System.Drawing.Size(100, 63);
+            this.backstageViewControl1.Size = new System.Drawing.Size(137, 64);
             this.backstageViewControl1.TabIndex = 2;
             this.backstageViewControl1.Text = "backstageViewControl1";
             // 
@@ -156,11 +154,13 @@
             // 
             this.button_doimatkhau.Caption = "Đổi mật khẩu";
             this.button_doimatkhau.Name = "button_doimatkhau";
+            this.button_doimatkhau.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.button_doimatkhau_ItemClick);
             // 
             // button_quanlynguoidung
             // 
             this.button_quanlynguoidung.Caption = "Quản lý người dùng";
             this.button_quanlynguoidung.Name = "button_quanlynguoidung";
+            this.button_quanlynguoidung.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.button_quanlynguoidung_ItemClick);
             // 
             // backstageViewItemSeparator2
             // 
@@ -196,15 +196,6 @@
             this.button_giaovien.Name = "button_giaovien";
             this.button_giaovien.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_giaovien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_giaovien_ItemClick);
-            // 
-            // button_phancong
-            // 
-            this.button_phancong.Caption = "Phân công";
-            this.button_phancong.Glyph = ((System.Drawing.Image)(resources.GetObject("button_phancong.Glyph")));
-            this.button_phancong.Id = 4;
-            this.button_phancong.Name = "button_phancong";
-            this.button_phancong.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.button_phancong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_phancong_ItemClick);
             // 
             // button_monhoc
             // 
@@ -268,6 +259,7 @@
             this.button_danhsach_hocsinh.Id = 13;
             this.button_danhsach_hocsinh.Name = "button_danhsach_hocsinh";
             this.button_danhsach_hocsinh.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.button_danhsach_hocsinh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_danhsach_hocsinh_ItemClick);
             // 
             // button_danhsach_giaovien
             // 
@@ -318,6 +310,7 @@
             this.barButtonItem20.Id = 20;
             this.barButtonItem20.Name = "barButtonItem20";
             this.barButtonItem20.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem20.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem20_ItemClick);
             // 
             // barButtonItem21
             // 
@@ -325,6 +318,7 @@
             this.barButtonItem21.Id = 21;
             this.barButtonItem21.Name = "barButtonItem21";
             this.barButtonItem21.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem21.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem21_ItemClick);
             // 
             // button_to_bomon
             // 
@@ -358,7 +352,6 @@
             // 
             this.ribbonPageGroup2.AllowTextClipping = false;
             this.ribbonPageGroup2.ItemLinks.Add(this.button_giaovien);
-            this.ribbonPageGroup2.ItemLinks.Add(this.button_phancong);
             this.ribbonPageGroup2.ItemLinks.Add(this.button_to_bomon);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Giáo Viên";
@@ -473,8 +466,10 @@
             this.IsMdiContainer = true;
             this.Name = "giaodienchinh";
             this.Ribbon = this.ribbonControl1;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.StatusBar = this.ribbonStatusBar1;
             this.Text = "PHẦN MỀM QUẢN LÝ ĐIỂM HỌC SINH";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.giaodienchinh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
@@ -494,7 +489,6 @@
         private DevExpress.XtraBars.BarButtonItem button_quanlyhocsinh;
         private DevExpress.XtraBars.BarButtonItem button_phanlop;
         private DevExpress.XtraBars.BarButtonItem button_giaovien;
-        private DevExpress.XtraBars.BarButtonItem button_phancong;
         private DevExpress.XtraBars.BarButtonItem button_monhoc;
         private DevExpress.XtraBars.BarButtonItem button_diem;
         private DevExpress.XtraBars.BarButtonItem button_lop;

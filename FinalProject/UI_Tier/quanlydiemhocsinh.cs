@@ -17,5 +17,35 @@ namespace UI_Tier
         {
             InitializeComponent();
         }
+
+   
+
+        private void quanlydiemhocsinh_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataDataSet.Diem' table. You can move, or remove it, as needed.
+            this.diemTableAdapter.Fill(this.dataDataSet.Diem);
+            // TODO: This line of code loads data into the 'dataDataSet.Diem' table. You can move, or remove it, as needed.
+   
+
+        }
+
+        private void diemBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.diemBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dataDataSet);
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            quanlymonhoc _ql_monhoc = new quanlymonhoc();
+            _ql_monhoc.Show();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.diemBindingSource.CancelEdit();
+        }
     }
 }

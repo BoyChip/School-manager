@@ -94,6 +94,7 @@
             this.toBoMonBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
             this.toBoMonBindingNavigator.BindingSource = this.toBoMonBindingSource;
             this.toBoMonBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.toBoMonBindingNavigator.CountItemFormat = "/{0}";
             this.toBoMonBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
             this.toBoMonBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
@@ -132,8 +133,8 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(26, 22);
+            this.bindingNavigatorCountItem.Text = "/{0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorDeleteItem
@@ -247,6 +248,7 @@
             // 
             // colma_to_bomon
             // 
+            this.colma_to_bomon.Caption = "Mã tổ - bộ môn";
             this.colma_to_bomon.FieldName = "ma_to_bomon";
             this.colma_to_bomon.Name = "colma_to_bomon";
             this.colma_to_bomon.Visible = true;
@@ -254,6 +256,7 @@
             // 
             // colten_to_bomon
             // 
+            this.colten_to_bomon.Caption = "Tên tổ - bộ môn";
             this.colten_to_bomon.FieldName = "ten_to_bomon";
             this.colten_to_bomon.Name = "colten_to_bomon";
             this.colten_to_bomon.Visible = true;

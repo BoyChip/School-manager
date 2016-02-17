@@ -32,5 +32,10 @@ namespace UI_Tier
             this.danhGiaTableAdapter.Fill(this.dataDataSet.DanhGia);
 
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.danhGiaBindingSource.CancelEdit();
+        }
     }
 }

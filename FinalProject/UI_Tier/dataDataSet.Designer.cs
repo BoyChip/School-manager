@@ -1367,7 +1367,7 @@ namespace UI_Tier {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DiemRow AddDiemRow(HocSinhRow parentHocSinhRowByFK_Diem_HocSinh, MonHocRow parentMonHocRowByFK_Diem_MonHoc, string hocky, string namhoc, int diem, int heso) {
+            public DiemRow AddDiemRow(HocSinhRow parentHocSinhRowByFK_Diem_HocSinh, MonHocRow parentMonHocRowByFK_Diem_MonHoc, string hocky, string namhoc, double diem, int heso) {
                 DiemRow rowDiemRow = ((DiemRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1423,7 +1423,7 @@ namespace UI_Tier {
                 base.Columns.Add(this.columnhocky);
                 this.columnnamhoc = new global::System.Data.DataColumn("namhoc", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnnamhoc);
-                this.columndiem = new global::System.Data.DataColumn("diem", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columndiem = new global::System.Data.DataColumn("diem", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndiem);
                 this.columnheso = new global::System.Data.DataColumn("heso", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnheso);
@@ -4180,10 +4180,10 @@ namespace UI_Tier {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int diem {
+            public double diem {
                 get {
                     try {
-                        return ((int)(this[this.tableDiem.diemColumn]));
+                        return ((double)(this[this.tableDiem.diemColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'diem\' in table \'Diem\' is DBNull.", e);
@@ -6563,7 +6563,7 @@ namespace UI_Tier.dataDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mamonhoc", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mamonhoc", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@hocky", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "hocky", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@namhoc", global::System.Data.SqlDbType.NChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "namhoc", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@diem", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "diem", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@diem", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "diem", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@heso", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "heso", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -6641,7 +6641,7 @@ namespace UI_Tier.dataDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string mahocsinh, string mamonhoc, string hocky, string namhoc, global::System.Nullable<int> diem, global::System.Nullable<int> heso) {
+        public virtual int Insert(string mahocsinh, string mamonhoc, string hocky, string namhoc, global::System.Nullable<double> diem, global::System.Nullable<int> heso) {
             if ((mahocsinh == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -6667,7 +6667,7 @@ namespace UI_Tier.dataDataSetTableAdapters {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(namhoc));
             }
             if ((diem.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(diem.Value));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((double)(diem.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;

@@ -32,3 +32,9 @@ C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\
 C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.quanlyhocluc.resources
 C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.quanlytobomon.resources
 C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.quanlygiaovien.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.quanlydiemhocsinh.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.quanlyphanlophocsinh.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.timkiemhocsinh.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.doimatkhau.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.timkiemgiaovien.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.quanlynguoidung.resources
