@@ -34,14 +34,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 261);
+            this.ClientSize = new System.Drawing.Size(979, 470);
             this.Name = "hocsinh";
-            this.Text = "hocsinh";
+            this.Text = "QUẢN LÝ HỌC SINH";
             this.Load += new System.EventHandler(this.hocsinh_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+
     }
 }

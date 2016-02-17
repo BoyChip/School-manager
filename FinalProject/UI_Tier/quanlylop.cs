@@ -17,5 +17,20 @@ namespace UI_Tier
         {
             InitializeComponent();
         }
+
+        private void quanlylop_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dataDataSet.Lop' table. You can move, or remove it, as needed.
+            this.lopTableAdapter.Fill(this.dataDataSet.Lop);
+            // TODO: This line of code loads data into the 'dataDataSet.Lop' table. You can move, or remove it, as needed.
+        }
+
+        private void lopBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.lopBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.dataDataSet);
+
+        }
     }
 }
