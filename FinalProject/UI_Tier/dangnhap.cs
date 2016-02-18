@@ -24,7 +24,7 @@ namespace UI_Tier
             this.AcceptButton = button_dangnhap;
             this.text_taikhoan.Text = "admin";
             this.text_matkhau.Text = "admin";
-            this.label_thongbao.Text = "Thong bao"; 
+            this.label_thongbao.Text = "Kết nối thành công với cơ sở dữ liệu!"; 
         }
 
         private void button_dangnhap_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace UI_Tier
 
         private void button_thoat_Click(object sender, EventArgs e)
         {
-            if (DevExpress.XtraEditors.XtraMessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (DevExpress.XtraEditors.XtraMessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 this.Close();
                 System.Windows.Forms.Application.Exit();
@@ -65,6 +65,11 @@ namespace UI_Tier
             this.text_taikhoan.Clear();
             this.text_matkhau.Clear();
             this.text_taikhoan.Focus();
+        }
+
+        private void label_thongbao_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

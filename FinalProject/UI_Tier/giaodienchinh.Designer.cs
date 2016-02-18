@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(giaodienchinh));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
-            this.backstageViewButtonItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.button_dangxuat = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.backstageViewItemSeparator1 = new DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator();
             this.button_doimatkhau = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
@@ -74,8 +73,13 @@
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.backstageViewButtonItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -112,11 +116,13 @@
             this.ribbonPage2,
             this.ribbonPage3});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.ribbonControl1.Size = new System.Drawing.Size(983, 144);
+            this.ribbonControl1.Size = new System.Drawing.Size(1177, 144);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
             // 
             // backstageViewControl1
             // 
+            this.backstageViewControl1.AllowGlyphSkinning = true;
+            this.backstageViewControl1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("backstageViewControl1.BackgroundImage")));
             this.backstageViewControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Yellow;
             this.backstageViewControl1.Items.Add(this.backstageViewButtonItem1);
             this.backstageViewControl1.Items.Add(this.button_dangxuat);
@@ -125,24 +131,20 @@
             this.backstageViewControl1.Items.Add(this.button_quanlynguoidung);
             this.backstageViewControl1.Items.Add(this.backstageViewItemSeparator2);
             this.backstageViewControl1.Items.Add(this.button_thoat);
-            this.backstageViewControl1.Location = new System.Drawing.Point(745, 57);
+            this.backstageViewControl1.Location = new System.Drawing.Point(752, 65);
             this.backstageViewControl1.Name = "backstageViewControl1";
             this.backstageViewControl1.Ribbon = this.ribbonControl1;
             this.backstageViewControl1.SelectedTab = null;
-            this.backstageViewControl1.Size = new System.Drawing.Size(137, 63);
+            this.backstageViewControl1.Size = new System.Drawing.Size(114, 65);
             this.backstageViewControl1.TabIndex = 2;
             this.backstageViewControl1.Text = "backstageViewControl1";
-            // 
-            // backstageViewButtonItem1
-            // 
-            this.backstageViewButtonItem1.Caption = "Đăng nhập";
-            this.backstageViewButtonItem1.Name = "backstageViewButtonItem1";
-            this.backstageViewButtonItem1.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageViewButtonItem1_ItemClick);
+            this.backstageViewControl1.Click += new System.EventHandler(this.backstageViewControl1_Click);
             // 
             // button_dangxuat
             // 
             this.button_dangxuat.Caption = "Đăng xuất";
             this.button_dangxuat.Name = "button_dangxuat";
+            this.button_dangxuat.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.button_dangxuat_ItemClick);
             // 
             // backstageViewItemSeparator1
             // 
@@ -173,7 +175,9 @@
             // button_quanlyhocsinh
             // 
             this.button_quanlyhocsinh.Caption = "Học sinh";
+            this.button_quanlyhocsinh.Glyph = ((System.Drawing.Image)(resources.GetObject("button_quanlyhocsinh.Glyph")));
             this.button_quanlyhocsinh.Id = 1;
+            this.button_quanlyhocsinh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_quanlyhocsinh.LargeGlyph")));
             this.button_quanlyhocsinh.Name = "button_quanlyhocsinh";
             this.button_quanlyhocsinh.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_quanlyhocsinh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_quanlyhocsinh_ItemClick);
@@ -181,7 +185,9 @@
             // button_phanlop
             // 
             this.button_phanlop.Caption = "Phân lớp";
+            this.button_phanlop.Glyph = ((System.Drawing.Image)(resources.GetObject("button_phanlop.Glyph")));
             this.button_phanlop.Id = 2;
+            this.button_phanlop.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_phanlop.LargeGlyph")));
             this.button_phanlop.Name = "button_phanlop";
             this.button_phanlop.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_phanlop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_phanlop_ItemClick);
@@ -198,7 +204,9 @@
             // button_monhoc
             // 
             this.button_monhoc.Caption = "Môn học";
+            this.button_monhoc.Glyph = ((System.Drawing.Image)(resources.GetObject("button_monhoc.Glyph")));
             this.button_monhoc.Id = 5;
+            this.button_monhoc.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_monhoc.LargeGlyph")));
             this.button_monhoc.Name = "button_monhoc";
             this.button_monhoc.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_monhoc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_monhoc_ItemClick);
@@ -206,7 +214,9 @@
             // button_diem
             // 
             this.button_diem.Caption = "Điểm";
+            this.button_diem.Glyph = ((System.Drawing.Image)(resources.GetObject("button_diem.Glyph")));
             this.button_diem.Id = 6;
+            this.button_diem.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_diem.LargeGlyph")));
             this.button_diem.Name = "button_diem";
             this.button_diem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_diem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_diem_ItemClick);
@@ -214,7 +224,9 @@
             // button_lop
             // 
             this.button_lop.Caption = "Lớp";
+            this.button_lop.Glyph = ((System.Drawing.Image)(resources.GetObject("button_lop.Glyph")));
             this.button_lop.Id = 7;
+            this.button_lop.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_lop.LargeGlyph")));
             this.button_lop.Name = "button_lop";
             this.button_lop.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_lop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_lop_ItemClick);
@@ -222,7 +234,9 @@
             // button_khoilop
             // 
             this.button_khoilop.Caption = "Khối lớp";
+            this.button_khoilop.Glyph = ((System.Drawing.Image)(resources.GetObject("button_khoilop.Glyph")));
             this.button_khoilop.Id = 8;
+            this.button_khoilop.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_khoilop.LargeGlyph")));
             this.button_khoilop.Name = "button_khoilop";
             this.button_khoilop.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_khoilop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_khoilop_ItemClick);
@@ -230,7 +244,9 @@
             // button_hocky
             // 
             this.button_hocky.Caption = "Học Kỳ - Năm Học";
+            this.button_hocky.Glyph = ((System.Drawing.Image)(resources.GetObject("button_hocky.Glyph")));
             this.button_hocky.Id = 9;
+            this.button_hocky.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_hocky.LargeGlyph")));
             this.button_hocky.Name = "button_hocky";
             this.button_hocky.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_hocky.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_hocky_ItemClick);
@@ -238,7 +254,9 @@
             // button_hocluc
             // 
             this.button_hocluc.Caption = "Học lực";
+            this.button_hocluc.Glyph = ((System.Drawing.Image)(resources.GetObject("button_hocluc.Glyph")));
             this.button_hocluc.Id = 11;
+            this.button_hocluc.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_hocluc.LargeGlyph")));
             this.button_hocluc.Name = "button_hocluc";
             this.button_hocluc.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_hocluc.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_hocluc_ItemClick);
@@ -246,7 +264,9 @@
             // button_hanhkiem
             // 
             this.button_hanhkiem.Caption = "Hạnh kiểm";
+            this.button_hanhkiem.Glyph = ((System.Drawing.Image)(resources.GetObject("button_hanhkiem.Glyph")));
             this.button_hanhkiem.Id = 12;
+            this.button_hanhkiem.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_hanhkiem.LargeGlyph")));
             this.button_hanhkiem.Name = "button_hanhkiem";
             this.button_hanhkiem.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_hanhkiem.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_hanhkiem_ItemClick);
@@ -254,7 +274,9 @@
             // button_danhsach_hocsinh
             // 
             this.button_danhsach_hocsinh.Caption = "Học sinh";
+            this.button_danhsach_hocsinh.Glyph = ((System.Drawing.Image)(resources.GetObject("button_danhsach_hocsinh.Glyph")));
             this.button_danhsach_hocsinh.Id = 13;
+            this.button_danhsach_hocsinh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_danhsach_hocsinh.LargeGlyph")));
             this.button_danhsach_hocsinh.Name = "button_danhsach_hocsinh";
             this.button_danhsach_hocsinh.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_danhsach_hocsinh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_danhsach_hocsinh_ItemClick);
@@ -262,7 +284,9 @@
             // button_danhsach_giaovien
             // 
             this.button_danhsach_giaovien.Caption = "Giáo viên";
+            this.button_danhsach_giaovien.Glyph = ((System.Drawing.Image)(resources.GetObject("button_danhsach_giaovien.Glyph")));
             this.button_danhsach_giaovien.Id = 14;
+            this.button_danhsach_giaovien.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_danhsach_giaovien.LargeGlyph")));
             this.button_danhsach_giaovien.Name = "button_danhsach_giaovien";
             this.button_danhsach_giaovien.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_danhsach_giaovien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_danhsach_giaovien_ItemClick);
@@ -270,7 +294,9 @@
             // button_danhsach_lop
             // 
             this.button_danhsach_lop.Caption = "Lớp";
+            this.button_danhsach_lop.Glyph = ((System.Drawing.Image)(resources.GetObject("button_danhsach_lop.Glyph")));
             this.button_danhsach_lop.Id = 15;
+            this.button_danhsach_lop.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_danhsach_lop.LargeGlyph")));
             this.button_danhsach_lop.Name = "button_danhsach_lop";
             this.button_danhsach_lop.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_danhsach_lop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_danhsach_lop_ItemClick);
@@ -307,6 +333,7 @@
             // barButtonItem20
             // 
             this.barButtonItem20.Caption = "Học sinh";
+            this.barButtonItem20.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.Glyph")));
             this.barButtonItem20.Id = 20;
             this.barButtonItem20.Name = "barButtonItem20";
             this.barButtonItem20.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
@@ -315,7 +342,9 @@
             // barButtonItem21
             // 
             this.barButtonItem21.Caption = "Giáo viên";
+            this.barButtonItem21.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.Glyph")));
             this.barButtonItem21.Id = 21;
+            this.barButtonItem21.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem21.LargeGlyph")));
             this.barButtonItem21.Name = "barButtonItem21";
             this.barButtonItem21.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barButtonItem21.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem21_ItemClick);
@@ -323,7 +352,9 @@
             // button_to_bomon
             // 
             this.button_to_bomon.Caption = "Tổ - Bộ môn";
+            this.button_to_bomon.Glyph = ((System.Drawing.Image)(resources.GetObject("button_to_bomon.Glyph")));
             this.button_to_bomon.Id = 22;
+            this.button_to_bomon.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("button_to_bomon.LargeGlyph")));
             this.button_to_bomon.Name = "button_to_bomon";
             this.button_to_bomon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.button_to_bomon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.button_to_bomon_ItemClick);
@@ -427,20 +458,48 @@
             // 
             // ribbonStatusBar1
             // 
-            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 399);
+            this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 398);
             this.ribbonStatusBar1.Name = "ribbonStatusBar1";
             this.ribbonStatusBar1.Ribbon = this.ribbonControl1;
-            this.ribbonStatusBar1.Size = new System.Drawing.Size(983, 31);
+            this.ribbonStatusBar1.Size = new System.Drawing.Size(1177, 31);
             // 
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(354, 276);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(408, 276);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // backstageViewButtonItem1
+            // 
+            this.backstageViewButtonItem1.Caption = "Đăng nhập";
+            this.backstageViewButtonItem1.Name = "backstageViewButtonItem1";
+            this.backstageViewButtonItem1.ItemClick += new DevExpress.XtraBars.Ribbon.BackstageViewItemEventHandler(this.backstageViewButtonItem1_ItemClick);
+            // 
             // giaodienchinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 430);
+            this.ClientSize = new System.Drawing.Size(1177, 429);
             this.Controls.Add(this.backstageViewControl1);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl1);
@@ -455,6 +514,8 @@
             this.Load += new System.EventHandler(this.giaodienchinh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -496,7 +557,6 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem20;
         private DevExpress.XtraBars.BarButtonItem barButtonItem21;
         private DevExpress.XtraBars.BarButtonItem button_to_bomon;
-        private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem backstageViewButtonItem1;
         private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem button_dangxuat;
         private DevExpress.XtraBars.Ribbon.BackstageViewItemSeparator backstageViewItemSeparator1;
         private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem button_doimatkhau;
@@ -505,5 +565,8 @@
         private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem button_thoat;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private DevExpress.XtraBars.Ribbon.BackstageViewButtonItem backstageViewButtonItem1;
     }
 }

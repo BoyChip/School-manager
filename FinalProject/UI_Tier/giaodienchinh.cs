@@ -40,7 +40,7 @@ namespace UI_Tier
         /// <param name="e"></param>
         private void button_thoat_ItemClick(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
         {
-            if (DevExpress.XtraEditors.XtraMessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (DevExpress.XtraEditors.XtraMessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 //this.Close();
                 System.Windows.Forms.Application.Exit();
@@ -53,7 +53,7 @@ namespace UI_Tier
         /// <param name="e"></param>
         private void backstageViewButtonItem1_ItemClick(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
         {
-            if (DevExpress.XtraEditors.XtraMessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (DevExpress.XtraEditors.XtraMessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 this.Close();
                 thr = new Thread(load_form_dangnhap);
@@ -188,6 +188,20 @@ namespace UI_Tier
             thongkedanhsachlop _tk_danhsachlop = new thongkedanhsachlop();
             _tk_danhsachlop.MdiParent = this;
             _tk_danhsachlop.Show();
+        }
+
+        private void button_dangxuat_ItemClick(object sender, DevExpress.XtraBars.Ribbon.BackstageViewItemEventArgs e)
+        {
+            if (DevExpress.XtraEditors.XtraMessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                //this.Close();
+                System.Windows.Forms.Application.Exit();
+            }
+        }
+
+        private void backstageViewControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -97,13 +97,13 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 127);
+            this.pictureBox1.Size = new System.Drawing.Size(131, 130);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(142, 91);
+            this.simpleButton1.Location = new System.Drawing.Point(139, 91);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(95, 23);
             this.simpleButton1.TabIndex = 7;
@@ -123,7 +123,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(359, 132);
+            this.ClientSize = new System.Drawing.Size(350, 132);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.pictureBox1);

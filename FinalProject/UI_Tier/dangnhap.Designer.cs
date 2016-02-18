@@ -51,9 +51,9 @@
             this.group_thongtindangnhap.Controls.Add(this.label_thongbao);
             this.group_thongtindangnhap.Controls.Add(this.label_matkhau);
             this.group_thongtindangnhap.Controls.Add(this.label_taikhoan);
-            this.group_thongtindangnhap.Location = new System.Drawing.Point(288, 29);
+            this.group_thongtindangnhap.Location = new System.Drawing.Point(249, 8);
             this.group_thongtindangnhap.Name = "group_thongtindangnhap";
-            this.group_thongtindangnhap.Size = new System.Drawing.Size(259, 172);
+            this.group_thongtindangnhap.Size = new System.Drawing.Size(237, 162);
             this.group_thongtindangnhap.TabIndex = 0;
             this.group_thongtindangnhap.Text = "Thông tin đăng nhập";
             // 
@@ -66,7 +66,7 @@
             // 
             // text_matkhau
             // 
-            this.text_matkhau.Location = new System.Drawing.Point(99, 78);
+            this.text_matkhau.Location = new System.Drawing.Point(99, 75);
             this.text_matkhau.Name = "text_matkhau";
             this.text_matkhau.PasswordChar = '*';
             this.text_matkhau.Size = new System.Drawing.Size(100, 21);
@@ -74,15 +74,17 @@
             // 
             // label_thongbao
             // 
-            this.label_thongbao.Location = new System.Drawing.Point(5, 135);
+            this.label_thongbao.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.label_thongbao.Location = new System.Drawing.Point(23, 119);
             this.label_thongbao.Name = "label_thongbao";
             this.label_thongbao.Size = new System.Drawing.Size(63, 13);
             this.label_thongbao.TabIndex = 4;
             this.label_thongbao.Text = "labelControl1";
+            this.label_thongbao.Click += new System.EventHandler(this.label_thongbao_Click);
             // 
             // label_matkhau
             // 
-            this.label_matkhau.Location = new System.Drawing.Point(6, 86);
+            this.label_matkhau.Location = new System.Drawing.Point(23, 78);
             this.label_matkhau.Name = "label_matkhau";
             this.label_matkhau.Size = new System.Drawing.Size(44, 13);
             this.label_matkhau.TabIndex = 1;
@@ -90,7 +92,7 @@
             // 
             // label_taikhoan
             // 
-            this.label_taikhoan.Location = new System.Drawing.Point(6, 45);
+            this.label_taikhoan.Location = new System.Drawing.Point(23, 37);
             this.label_taikhoan.Name = "label_taikhoan";
             this.label_taikhoan.Size = new System.Drawing.Size(46, 13);
             this.label_taikhoan.TabIndex = 0;
@@ -98,7 +100,7 @@
             // 
             // button_dangnhap
             // 
-            this.button_dangnhap.Location = new System.Drawing.Point(288, 239);
+            this.button_dangnhap.Location = new System.Drawing.Point(249, 194);
             this.button_dangnhap.Name = "button_dangnhap";
             this.button_dangnhap.Size = new System.Drawing.Size(75, 23);
             this.button_dangnhap.TabIndex = 1;
@@ -107,7 +109,7 @@
             // 
             // button_nhaplai
             // 
-            this.button_nhaplai.Location = new System.Drawing.Point(370, 239);
+            this.button_nhaplai.Location = new System.Drawing.Point(330, 194);
             this.button_nhaplai.Name = "button_nhaplai";
             this.button_nhaplai.Size = new System.Drawing.Size(75, 23);
             this.button_nhaplai.TabIndex = 2;
@@ -116,7 +118,7 @@
             // 
             // button_thoat
             // 
-            this.button_thoat.Location = new System.Drawing.Point(452, 239);
+            this.button_thoat.Location = new System.Drawing.Point(411, 194);
             this.button_thoat.Name = "button_thoat";
             this.button_thoat.Size = new System.Drawing.Size(75, 23);
             this.button_thoat.TabIndex = 3;
@@ -126,9 +128,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(31, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(6, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(235, 250);
+            this.pictureBox1.Size = new System.Drawing.Size(235, 212);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -137,7 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 301);
+            this.ClientSize = new System.Drawing.Size(494, 226);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button_thoat);
             this.Controls.Add(this.button_nhaplai);
@@ -146,7 +148,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "dangnhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ĐĂNG NHẬP";
+            this.Text = "ĐĂNG NHẬP - PHẦN MỀM QUẢN LÝ ĐIỂM HỌC SINH";
             this.Load += new System.EventHandler(this.dangnhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.group_thongtindangnhap)).EndInit();
             this.group_thongtindangnhap.ResumeLayout(false);

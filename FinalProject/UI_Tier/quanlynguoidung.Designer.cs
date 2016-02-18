@@ -50,23 +50,23 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.dangNhapBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.giaoVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colmagiaovien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.colmatkhau = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colphanquyennguoidung = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.giaoVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dangNhapBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dangNhapBindingNavigator)).BeginInit();
             this.dangNhapBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.giaoVienBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.giaoVienBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataDataSet
@@ -130,7 +130,7 @@
             this.dangNhapBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.dangNhapBindingNavigator.Name = "dangNhapBindingNavigator";
             this.dangNhapBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.dangNhapBindingNavigator.Size = new System.Drawing.Size(667, 25);
+            this.dangNhapBindingNavigator.Size = new System.Drawing.Size(484, 25);
             this.dangNhapBindingNavigator.TabIndex = 0;
             this.dangNhapBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -240,7 +240,7 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.DataSource = this.giaoVienBindingSource;
+            this.gridControl1.DataSource = this.dangNhapBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.Location = new System.Drawing.Point(0, 25);
             this.gridControl1.MainView = this.gridView1;
@@ -248,16 +248,11 @@
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemComboBox1,
             this.repositoryItemComboBox2});
-            this.gridControl1.Size = new System.Drawing.Size(667, 289);
+            this.gridControl1.Size = new System.Drawing.Size(484, 236);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
-            // 
-            // giaoVienBindingSource
-            // 
-            this.giaoVienBindingSource.DataMember = "GiaoVien";
-            this.giaoVienBindingSource.DataSource = this.dataDataSet;
             // 
             // gridView1
             // 
@@ -295,12 +290,21 @@
             // colphanquyennguoidung
             // 
             this.colphanquyennguoidung.Caption = "Phân quyền";
-            this.colphanquyennguoidung.ColumnEdit = this.repositoryItemComboBox2;
-            this.colphanquyennguoidung.FieldName = "FK_DangNhap_GiaoVien.phanquyennguoidung";
+            this.colphanquyennguoidung.ColumnEdit = this.repositoryItemComboBox1;
+            this.colphanquyennguoidung.FieldName = "phanquyennguoidung";
             this.colphanquyennguoidung.Name = "colphanquyennguoidung";
             this.colphanquyennguoidung.Visible = true;
             this.colphanquyennguoidung.VisibleIndex = 2;
             this.colphanquyennguoidung.Width = 261;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Tên giáo viên";
+            this.gridColumn1.FieldName = "tengiaovien";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 1;
+            this.gridColumn1.Width = 168;
             // 
             // repositoryItemComboBox2
             // 
@@ -309,23 +313,21 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemComboBox2.Name = "repositoryItemComboBox2";
             // 
-            // gridColumn1
+            // giaoVienBindingSource
             // 
-            this.gridColumn1.Caption = "Tên giáo viên";
-            this.gridColumn1.FieldName = "FK_DangNhap_GiaoVien";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
-            this.gridColumn1.Width = 168;
+            this.giaoVienBindingSource.DataMember = "GiaoVien";
+            this.giaoVienBindingSource.DataSource = this.dataDataSet;
             // 
             // quanlynguoidung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 314);
+            this.ClientSize = new System.Drawing.Size(484, 261);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.dangNhapBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "quanlynguoidung";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ NGƯỜI DÙNG";
             this.Load += new System.EventHandler(this.quanlynguoidung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).EndInit();
@@ -334,10 +336,10 @@
             this.dangNhapBindingNavigator.ResumeLayout(false);
             this.dangNhapBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.giaoVienBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.giaoVienBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
