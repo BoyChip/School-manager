@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(quanlykhoilop));
             this.dataDataSet = new UI_Tier.dataDataSet();
             this.khoiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.khoiTableAdapter = new UI_Tier.dataDataSetTableAdapters.KhoiTableAdapter();
@@ -129,6 +130,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(291, 141);
             this.Controls.Add(this.gridControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "quanlykhoilop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DANH SÁCH KHỐI LỚP";

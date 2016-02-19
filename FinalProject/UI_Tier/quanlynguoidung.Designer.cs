@@ -53,9 +53,7 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colmagiaovien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
-            this.colmatkhau = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colphanquyennguoidung = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.giaoVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).BeginInit();
@@ -258,9 +256,7 @@
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colmagiaovien,
-            this.colmatkhau,
-            this.colphanquyennguoidung,
-            this.gridColumn1});
+            this.colphanquyennguoidung});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -282,11 +278,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             // 
-            // colmatkhau
-            // 
-            this.colmatkhau.FieldName = "matkhau";
-            this.colmatkhau.Name = "colmatkhau";
-            // 
             // colphanquyennguoidung
             // 
             this.colphanquyennguoidung.Caption = "Phân quyền";
@@ -294,17 +285,8 @@
             this.colphanquyennguoidung.FieldName = "phanquyennguoidung";
             this.colphanquyennguoidung.Name = "colphanquyennguoidung";
             this.colphanquyennguoidung.Visible = true;
-            this.colphanquyennguoidung.VisibleIndex = 2;
+            this.colphanquyennguoidung.VisibleIndex = 1;
             this.colphanquyennguoidung.Width = 261;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "Tên giáo viên";
-            this.gridColumn1.FieldName = "tengiaovien";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
-            this.gridColumn1.Width = 168;
             // 
             // repositoryItemComboBox2
             // 
@@ -368,9 +350,7 @@
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colmagiaovien;
-        private DevExpress.XtraGrid.Columns.GridColumn colmatkhau;
         private DevExpress.XtraGrid.Columns.GridColumn colphanquyennguoidung;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private System.Windows.Forms.BindingSource giaoVienBindingSource;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;

@@ -60,41 +60,41 @@
             this.giaoVienBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.chucvuTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.chuyenmonTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.ma_to_bomonTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.dienthoaiTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.magiaovienTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.diachiTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.hogiaovienTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.ngaysinhDateEdit = new DevExpress.XtraEditors.DateEdit();
             this.tengiaovienTextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.gioitinhTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colmagiaovien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colhogiaovien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coltengiaovien = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colgioitinh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.colngaysinh = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
             this.coldiachi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.coldienthoai = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colchucvu = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colchuyenmon = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colma_to_bomon = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.chucvuTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.chuyenmonTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.ma_to_bomonTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
-            this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
-            this.gioitinhTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
-            this.repositoryItemComboBox3 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.repositoryItemComboBox4 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.colchuyenmon = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemComboBox3 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.colma_to_bomon = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             magiaovienLabel = new System.Windows.Forms.Label();
             hogiaovienLabel = new System.Windows.Forms.Label();
             tengiaovienLabel = new System.Windows.Forms.Label();
@@ -113,6 +113,9 @@
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chucvuTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chuyenmonTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ma_to_bomonTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dienthoaiTextEdit.Properties)).BeginInit();
@@ -122,21 +125,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.ngaysinhDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ngaysinhDateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tengiaovienTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chucvuTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chuyenmonTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ma_to_bomonTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gioitinhTextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gioitinhTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // magiaovienLabel
@@ -424,6 +424,36 @@
             this.groupControl2.TabIndex = 21;
             this.groupControl2.Text = "Thông tin thêm";
             // 
+            // chucvuTextEdit
+            // 
+            this.chucvuTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.giaoVienBindingSource, "chucvu", true));
+            this.chucvuTextEdit.Location = new System.Drawing.Point(280, 33);
+            this.chucvuTextEdit.Name = "chucvuTextEdit";
+            this.chucvuTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.chucvuTextEdit.Size = new System.Drawing.Size(100, 20);
+            this.chucvuTextEdit.TabIndex = 15;
+            // 
+            // chuyenmonTextEdit
+            // 
+            this.chuyenmonTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.giaoVienBindingSource, "chuyenmon", true));
+            this.chuyenmonTextEdit.Location = new System.Drawing.Point(89, 61);
+            this.chuyenmonTextEdit.Name = "chuyenmonTextEdit";
+            this.chuyenmonTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.chuyenmonTextEdit.Size = new System.Drawing.Size(100, 20);
+            this.chuyenmonTextEdit.TabIndex = 17;
+            // 
+            // ma_to_bomonTextEdit
+            // 
+            this.ma_to_bomonTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.giaoVienBindingSource, "ma_to_bomon", true));
+            this.ma_to_bomonTextEdit.Location = new System.Drawing.Point(89, 33);
+            this.ma_to_bomonTextEdit.Name = "ma_to_bomonTextEdit";
+            this.ma_to_bomonTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.ma_to_bomonTextEdit.Size = new System.Drawing.Size(100, 20);
+            this.ma_to_bomonTextEdit.TabIndex = 19;
+            // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.label3);
@@ -452,6 +482,34 @@
             this.groupControl1.TabIndex = 20;
             this.groupControl1.Text = "Thông tin cơ bản";
             this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(201, 152);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 13);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Tỉnh/Thành Phố";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(16, 152);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Quận/Huyện";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(201, 124);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Xã/Phường";
             // 
             // dienthoaiTextEdit
             // 
@@ -507,6 +565,46 @@
             this.tengiaovienTextEdit.Size = new System.Drawing.Size(126, 20);
             this.tengiaovienTextEdit.TabIndex = 5;
             // 
+            // textEdit3
+            // 
+            this.textEdit3.Location = new System.Drawing.Point(290, 147);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEdit3.Size = new System.Drawing.Size(87, 20);
+            this.textEdit3.TabIndex = 22;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(290, 121);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEdit1.Size = new System.Drawing.Size(87, 20);
+            this.textEdit1.TabIndex = 20;
+            this.textEdit1.SelectedIndexChanged += new System.EventHandler(this.textEdit1_SelectedIndexChanged);
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(96, 147);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEdit2.Size = new System.Drawing.Size(99, 20);
+            this.textEdit2.TabIndex = 21;
+            // 
+            // gioitinhTextEdit
+            // 
+            this.gioitinhTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.giaoVienBindingSource, "gioitinh", true));
+            this.gioitinhTextEdit.Location = new System.Drawing.Point(95, 89);
+            this.gioitinhTextEdit.Name = "gioitinhTextEdit";
+            this.gioitinhTextEdit.Properties.AutoHeight = false;
+            this.gioitinhTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.gioitinhTextEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.gioitinhTextEdit.Size = new System.Drawing.Size(63, 19);
+            this.gioitinhTextEdit.TabIndex = 7;
+            // 
             // gridControl1
             // 
             this.gridControl1.DataSource = this.giaoVienBindingSource;
@@ -540,17 +638,19 @@
             this.colma_to_bomon});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsFind.AlwaysVisible = true;
             this.gridView1.OptionsFind.SearchInPreview = true;
+            this.gridView1.OptionsView.ColumnAutoWidth = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // colmagiaovien
             // 
             this.colmagiaovien.Caption = "Mã giáo viên";
             this.colmagiaovien.FieldName = "magiaovien";
+            this.colmagiaovien.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.colmagiaovien.Name = "colmagiaovien";
             this.colmagiaovien.Visible = true;
             this.colmagiaovien.VisibleIndex = 0;
+            this.colmagiaovien.Width = 82;
             // 
             // colhogiaovien
             // 
@@ -576,6 +676,14 @@
             this.colgioitinh.Name = "colgioitinh";
             this.colgioitinh.Visible = true;
             this.colgioitinh.VisibleIndex = 3;
+            this.colgioitinh.Width = 57;
+            // 
+            // repositoryItemComboBox1
+            // 
+            this.repositoryItemComboBox1.AutoHeight = false;
+            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
             // 
             // colngaysinh
             // 
@@ -585,6 +693,16 @@
             this.colngaysinh.Name = "colngaysinh";
             this.colngaysinh.Visible = true;
             this.colngaysinh.VisibleIndex = 4;
+            this.colngaysinh.Width = 62;
+            // 
+            // repositoryItemDateEdit1
+            // 
+            this.repositoryItemDateEdit1.AutoHeight = false;
+            this.repositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEdit1.Name = "repositoryItemDateEdit1";
             // 
             // coldiachi
             // 
@@ -610,6 +728,14 @@
             this.colchucvu.Name = "colchucvu";
             this.colchucvu.Visible = true;
             this.colchucvu.VisibleIndex = 7;
+            this.colchucvu.Width = 57;
+            // 
+            // repositoryItemComboBox4
+            // 
+            this.repositoryItemComboBox4.AutoHeight = false;
+            this.repositoryItemComboBox4.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox4.Name = "repositoryItemComboBox4";
             // 
             // colchuyenmon
             // 
@@ -619,6 +745,14 @@
             this.colchuyenmon.Name = "colchuyenmon";
             this.colchuyenmon.Visible = true;
             this.colchuyenmon.VisibleIndex = 8;
+            this.colchuyenmon.Width = 57;
+            // 
+            // repositoryItemComboBox3
+            // 
+            this.repositoryItemComboBox3.AutoHeight = false;
+            this.repositoryItemComboBox3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox3.Name = "repositoryItemComboBox3";
             // 
             // colma_to_bomon
             // 
@@ -628,125 +762,7 @@
             this.colma_to_bomon.Name = "colma_to_bomon";
             this.colma_to_bomon.Visible = true;
             this.colma_to_bomon.VisibleIndex = 9;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(201, 124);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Xã/Phường";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 152);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Quận/Huyện";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(201, 152);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 13);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Tỉnh/Thành Phố";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.Location = new System.Drawing.Point(290, 147);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEdit3.Size = new System.Drawing.Size(87, 20);
-            this.textEdit3.TabIndex = 22;
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(290, 121);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEdit1.Size = new System.Drawing.Size(87, 20);
-            this.textEdit1.TabIndex = 20;
-            this.textEdit1.SelectedIndexChanged += new System.EventHandler(this.textEdit1_SelectedIndexChanged);
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(96, 147);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEdit2.Size = new System.Drawing.Size(99, 20);
-            this.textEdit2.TabIndex = 21;
-            // 
-            // chucvuTextEdit
-            // 
-            this.chucvuTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.giaoVienBindingSource, "chucvu", true));
-            this.chucvuTextEdit.Location = new System.Drawing.Point(280, 33);
-            this.chucvuTextEdit.Name = "chucvuTextEdit";
-            this.chucvuTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.chucvuTextEdit.Size = new System.Drawing.Size(100, 20);
-            this.chucvuTextEdit.TabIndex = 15;
-            // 
-            // chuyenmonTextEdit
-            // 
-            this.chuyenmonTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.giaoVienBindingSource, "chuyenmon", true));
-            this.chuyenmonTextEdit.Location = new System.Drawing.Point(89, 61);
-            this.chuyenmonTextEdit.Name = "chuyenmonTextEdit";
-            this.chuyenmonTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.chuyenmonTextEdit.Size = new System.Drawing.Size(100, 20);
-            this.chuyenmonTextEdit.TabIndex = 17;
-            // 
-            // ma_to_bomonTextEdit
-            // 
-            this.ma_to_bomonTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.giaoVienBindingSource, "ma_to_bomon", true));
-            this.ma_to_bomonTextEdit.Location = new System.Drawing.Point(89, 33);
-            this.ma_to_bomonTextEdit.Name = "ma_to_bomonTextEdit";
-            this.ma_to_bomonTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.ma_to_bomonTextEdit.Size = new System.Drawing.Size(100, 20);
-            this.ma_to_bomonTextEdit.TabIndex = 19;
-            // 
-            // repositoryItemComboBox1
-            // 
-            this.repositoryItemComboBox1.AutoHeight = false;
-            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
-            // 
-            // repositoryItemDateEdit1
-            // 
-            this.repositoryItemDateEdit1.AutoHeight = false;
-            this.repositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemDateEdit1.Name = "repositoryItemDateEdit1";
-            // 
-            // gioitinhTextEdit
-            // 
-            this.gioitinhTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.giaoVienBindingSource, "gioitinh", true));
-            this.gioitinhTextEdit.Location = new System.Drawing.Point(95, 89);
-            this.gioitinhTextEdit.Name = "gioitinhTextEdit";
-            this.gioitinhTextEdit.Properties.AutoHeight = false;
-            this.gioitinhTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.gioitinhTextEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.gioitinhTextEdit.Size = new System.Drawing.Size(63, 19);
-            this.gioitinhTextEdit.TabIndex = 7;
+            this.colma_to_bomon.Width = 63;
             // 
             // repositoryItemComboBox2
             // 
@@ -755,19 +771,10 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemComboBox2.Name = "repositoryItemComboBox2";
             // 
-            // repositoryItemComboBox3
+            // contextMenuStrip1
             // 
-            this.repositoryItemComboBox3.AutoHeight = false;
-            this.repositoryItemComboBox3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemComboBox3.Name = "repositoryItemComboBox3";
-            // 
-            // repositoryItemComboBox4
-            // 
-            this.repositoryItemComboBox4.AutoHeight = false;
-            this.repositoryItemComboBox4.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemComboBox4.Name = "repositoryItemComboBox4";
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // quanlygiaovien
             // 
@@ -789,6 +796,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chucvuTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chuyenmonTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ma_to_bomonTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
@@ -799,21 +809,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.ngaysinhDateEdit.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ngaysinhDateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tengiaovienTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chucvuTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chuyenmonTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ma_to_bomonTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gioitinhTextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gioitinhTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

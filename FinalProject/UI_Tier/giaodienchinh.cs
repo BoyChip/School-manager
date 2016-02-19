@@ -70,7 +70,9 @@ namespace UI_Tier
 
         private void giaodienchinh_Load(object sender, EventArgs e)
         {
-
+            this.toolStripStatusLabel1.ForeColor = Color.Red;
+            this.toolStripStatusLabel1.Text = "Người dùng đang đăng nhập: ";
+            this.toolStripStatusLabel2.Text = "Quản trị hệ thống";
         }
 
         private void button_giaovien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -202,6 +204,16 @@ namespace UI_Tier
         private void backstageViewControl1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ribbonStatusBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

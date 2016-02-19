@@ -271,6 +271,7 @@
             this.ClientSize = new System.Drawing.Size(381, 221);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.toBoMonBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "quanlytobomon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ TỔ - BỘ MÔN";

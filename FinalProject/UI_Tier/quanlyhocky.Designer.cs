@@ -292,6 +292,7 @@
             this.ClientSize = new System.Drawing.Size(394, 209);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.hocKy_NamHocBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "quanlyhocky";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ HỌC KỲ - NĂM HỌC";

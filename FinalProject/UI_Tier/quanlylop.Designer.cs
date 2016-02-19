@@ -97,7 +97,7 @@
             this.lopBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
             this.lopBindingNavigator.BindingSource = this.lopBindingSource;
             this.lopBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.lopBindingNavigator.CountItemFormat = "/ {0}";
+            this.lopBindingNavigator.CountItemFormat = "/{0}";
             this.lopBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
             this.lopBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
@@ -136,8 +136,8 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(29, 22);
-            this.bindingNavigatorCountItem.Text = "/ {0}";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(26, 22);
+            this.bindingNavigatorCountItem.Text = "/{0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorDeleteItem
@@ -299,6 +299,7 @@
             this.ClientSize = new System.Drawing.Size(560, 223);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.lopBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "quanlylop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ DANH SÁCH LỚP";

@@ -45,10 +45,21 @@
             this.colchucvu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colchuyenmon = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colma_to_bomon = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemDateEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemDateEdit();
+            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.repositoryItemComboBox2 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.repositoryItemComboBox3 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
+            this.repositoryItemComboBox4 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.giaoVienBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // dataDataSet
@@ -87,6 +98,12 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemDateEdit1,
+            this.repositoryItemComboBox1,
+            this.repositoryItemComboBox2,
+            this.repositoryItemComboBox3,
+            this.repositoryItemComboBox4});
             this.gridControl1.Size = new System.Drawing.Size(984, 326);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -137,6 +154,7 @@
             // colgioitinh
             // 
             this.colgioitinh.Caption = "Giới tính";
+            this.colgioitinh.ColumnEdit = this.repositoryItemComboBox1;
             this.colgioitinh.FieldName = "gioitinh";
             this.colgioitinh.Name = "colgioitinh";
             this.colgioitinh.Visible = true;
@@ -145,6 +163,7 @@
             // colngaysinh
             // 
             this.colngaysinh.Caption = "Ngày sinh";
+            this.colngaysinh.ColumnEdit = this.repositoryItemDateEdit1;
             this.colngaysinh.FieldName = "ngaysinh";
             this.colngaysinh.Name = "colngaysinh";
             this.colngaysinh.Visible = true;
@@ -169,6 +188,7 @@
             // colchucvu
             // 
             this.colchucvu.Caption = "Chức vụ";
+            this.colchucvu.ColumnEdit = this.repositoryItemComboBox4;
             this.colchucvu.FieldName = "chucvu";
             this.colchucvu.Name = "colchucvu";
             this.colchucvu.Visible = true;
@@ -177,6 +197,7 @@
             // colchuyenmon
             // 
             this.colchuyenmon.Caption = "Chuyên môn";
+            this.colchuyenmon.ColumnEdit = this.repositoryItemComboBox3;
             this.colchuyenmon.FieldName = "chuyenmon";
             this.colchuyenmon.Name = "colchuyenmon";
             this.colchuyenmon.Visible = true;
@@ -185,10 +206,48 @@
             // colma_to_bomon
             // 
             this.colma_to_bomon.Caption = "Tổ - bộ môn";
+            this.colma_to_bomon.ColumnEdit = this.repositoryItemComboBox2;
             this.colma_to_bomon.FieldName = "ma_to_bomon";
             this.colma_to_bomon.Name = "colma_to_bomon";
             this.colma_to_bomon.Visible = true;
             this.colma_to_bomon.VisibleIndex = 9;
+            // 
+            // repositoryItemDateEdit1
+            // 
+            this.repositoryItemDateEdit1.AutoHeight = false;
+            this.repositoryItemDateEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEdit1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemDateEdit1.Name = "repositoryItemDateEdit1";
+            // 
+            // repositoryItemComboBox1
+            // 
+            this.repositoryItemComboBox1.AutoHeight = false;
+            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
+            // 
+            // repositoryItemComboBox2
+            // 
+            this.repositoryItemComboBox2.AutoHeight = false;
+            this.repositoryItemComboBox2.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox2.Name = "repositoryItemComboBox2";
+            // 
+            // repositoryItemComboBox3
+            // 
+            this.repositoryItemComboBox3.AutoHeight = false;
+            this.repositoryItemComboBox3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox3.Name = "repositoryItemComboBox3";
+            // 
+            // repositoryItemComboBox4
+            // 
+            this.repositoryItemComboBox4.AutoHeight = false;
+            this.repositoryItemComboBox4.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemComboBox4.Name = "repositoryItemComboBox4";
             // 
             // timkiemgiaovien
             // 
@@ -203,6 +262,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.giaoVienBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDateEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -225,5 +290,10 @@
         private DevExpress.XtraGrid.Columns.GridColumn colchucvu;
         private DevExpress.XtraGrid.Columns.GridColumn colchuyenmon;
         private DevExpress.XtraGrid.Columns.GridColumn colma_to_bomon;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemDateEdit repositoryItemDateEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox4;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox3;
+        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox2;
     }
 }
