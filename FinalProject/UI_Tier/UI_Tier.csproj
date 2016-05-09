@@ -86,6 +86,10 @@
     <Compile Include="dangnhap.Designer.cs">
       <DependentUpon>dangnhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="dataDataSet.cs">
+      <DependentUpon>dataDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="dataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -218,6 +222,18 @@
     <Compile Include="timkiemhocsinh.Designer.cs">
       <DependentUpon>timkiemhocsinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="tracuudiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tracuudiem.Designer.cs">
+      <DependentUpon>tracuudiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vidu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vidu.Designer.cs">
+      <DependentUpon>vidu.cs</DependentUpon>
+    </Compile>
     <Compile Include="XRDesignRibbonControllerResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -280,6 +296,7 @@
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
     <EmbeddedResource Include="thongkedanhsachgiaovien.resx">
       <DependentUpon>thongkedanhsachgiaovien.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +311,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="timkiemhocsinh.resx">
       <DependentUpon>timkiemhocsinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tracuudiem.resx">
+      <DependentUpon>tracuudiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vidu.resx">
+      <DependentUpon>vidu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

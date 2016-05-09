@@ -215,5 +215,11 @@ namespace UI_Tier
         {
            
         }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            tracuudiem _tracuudiem = new tracuudiem();
+            _tracuudiem.Show();
+        }
     }
 }

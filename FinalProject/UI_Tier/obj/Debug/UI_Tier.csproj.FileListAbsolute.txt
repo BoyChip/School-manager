@@ -45,3 +45,5 @@ C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\
 C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\RdlCompile.compiled
 C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.thongkedanhsachgiaovien.resources
 C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.thongkedanhsachlop.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.vidu.resources
+C:\Users\BoyChip\Documents\GitHub\School-manager\FinalProject\UI_Tier\obj\Debug\UI_Tier.tracuudiem.resources
